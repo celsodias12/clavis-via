@@ -1,0 +1,8 @@
+[tools]
+node = "24.22.0"
+"npm:pnpm" = "11.28.5"
+# Local EAS builds only; CI installs just node and pnpm.
+"npm:eas-cli" = "24.8.0"
+java = "zulu-17.68.203.0"
+# The release tags are "cli-<version>", so the plain `maestro = "2.11.0"` alias 404s.
+"github:mobile-dev-inc/maestro" = { version = "2.11.0", version_prefix = "cli-" }

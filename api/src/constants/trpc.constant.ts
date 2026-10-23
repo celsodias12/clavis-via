@@ -1,0 +1,10 @@
+export const TRPC_ERRORS = Object.freeze({
+  UNAUTHORIZED: 'UNAUTHORIZED',
+  NOT_FOUND: 'NOT_FOUND',
+  TOO_MANY_REQUESTS: 'TOO_MANY_REQUESTS',
+  INTERNAL_SERVER_ERROR: 'INTERNAL_SERVER_ERROR',
+})
+
+export const TRPC_LOG_EVENT = Object.freeze({
+  INTERNAL_ERROR: 'trpc_internal_error',
+})

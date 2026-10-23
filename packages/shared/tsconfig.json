@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "verbatimModuleSyntax": true,
+    "types": ["vite/client"],
+    "resolveJsonModule": true
+  },
+  "include": ["src", "tests", "vite.config.ts"],
+  "references": [
+    {
+      "path": "../../api"
+    }
+  ]
+}

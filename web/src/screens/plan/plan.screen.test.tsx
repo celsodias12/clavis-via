@@ -1,0 +1,298 @@
+import { TEST_IDS, TRPC_ERROR_CODES } from '@clavis-via/shared'
+import { mockQuery, mockTrpcError, server, TEST_API_BASE_URL } from '@clavis-via/shared/testing'
+import { act, fireEvent, screen, waitFor } from '@testing-library/react'
+import { HttpResponse, http } from 'msw'
+import { toast } from 'sonner'
+import { beforeEach, describe, expect, it, vi } from 'vite-plus/test'
+import { renderWithProviders } from '../../../tests/utils/render'
+import { PlanScreen } from './plan.screen'
+
+vi.mock('sonner', () => ({ toast: vi.fn() }))
+
+const PLAN_ID = 'when-discouragement-weighs'
+const PLAN_ROUTE = `/plan/${PLAN_ID}`
+
+const DAYS = [
+  { dayNumber: 1, title: 'Respirar e reconhecer', summary: 'Pare por um momento e respire.' },
+  { dayNumber: 2, title: 'Pequenos movimentos', summary: 'Escolha um gesto pequeno.' },
+  { dayNumber: 3, title: 'Voltar a acreditar', summary: 'Releia o caminho até aqui.' },
+]
+
+function planDetail(overrides: Record<string, unknown> = {}) {
+  return {
+    id: PLAN_ID,
+    title: 'Quando o desânimo pesar',
+    category: 'emotions',
+    totalDays: 3,
+    description: 'Um plano curto para te ajudar a respirar.',
+    isEnrolled: false,
+    completedDayNumbers: [],
+    days: DAYS,
+    reflections: [],
+    ...overrides,
+  }
+}
+
+const REFLECTION = {
+  dayNumber: 1,
+  dayTitle: 'Respirar e reconhecer',
+  text: 'Hoje consegui parar um pouco.',
+  completedAt: '2026-10-18T15:00:00.000Z',
+}
+
+function renderPlan() {
+  return renderWithProviders(<PlanScreen planId={PLAN_ID} />, { route: PLAN_ROUTE })
+}
+
+describe('PlanScreen', () => {
+  beforeEach(() => {
+    vi.mocked(toast).mockClear()
+  })
+
+  it('shows the title, the durations, the description and the three day rows', async () => {
+    server.use(mockQuery('plan.detail', () => planDetail()))
+    await renderPlan()
+
+    await screen.findByText('Quando o desânimo pesar')
+    expect(screen.getByRole('heading', { name: 'Quando o desânimo pesar' })).toBeTruthy()
+    expect(screen.getByText('3 dias')).toBeTruthy()
+    expect(screen.getByText('5 a 10 min por dia')).toBeTruthy()
+    expect(screen.getByText('Um plano curto para te ajudar a respirar.')).toBeTruthy()
+    for (const day of DAYS) {
+      expect(screen.getByTestId(`${TEST_IDS.PLAN_DAY_ROW_PREFIX}${day.dayNumber}`)).toBeTruthy()
+      expect(screen.getByText(day.title)).toBeTruthy()
+      expect(screen.getByText(`Dia ${day.dayNumber}`)).toBeTruthy()
+    }
+    expect(screen.getByText('Visão geral')).toBeTruthy()
+    expect(screen.getByText('Começar plano')).toBeTruthy()
+  })
+
+  it('serves the cover of the plan from the first render, before the data arrives', async () => {
+    server.use(mockQuery('plan.detail', () => planDetail()))
+    await renderPlan()
+
+    const cover = screen.getByTestId(TEST_IDS.PLAN_COVER)
+    expect(cover.getAttribute('src')).toBe('/images/plan-cover-when-discouragement-weighs.png')
+    expect(cover.getAttribute('srcset')).toContain('@3x.png 876w')
+    await screen.findByText('Quando o desânimo pesar')
+  })
+
+  it('asks the API for the plan of the route', async () => {
+    const requested = vi.fn()
+    server.use(
+      mockQuery('plan.detail', (input) => {
+        requested(input)
+        return planDetail()
+      }),
+    )
+    await renderPlan()
+
+    await waitFor(() => expect(requested).toHaveBeenCalledWith({ planId: PLAN_ID }))
+    await screen.findByText('Quando o desânimo pesar')
+  })
+
+  it('starts the plan once, even when clicked twice, and then opens day 1', async () => {
+    let enrolled = false
+    let release = () => {}
+    const gate = new Promise<void>((resolve) => {
+      release = resolve
+    })
+    const started = vi.fn()
+    server.use(
+      mockQuery('plan.detail', () => planDetail({ isEnrolled: enrolled })),
+      mockQuery('plan.current', () => null),
+      http.post(`${TEST_API_BASE_URL}/trpc/plan.start`, async () => {
+        started()
+        await gate
+        enrolled = true
+        return HttpResponse.json({
+          result: { data: { planId: PLAN_ID, startedAt: '2026-10-20T12:00:00.000Z' } },
+        })
+      }),
+    )
+    const { router } = await renderPlan()
+    await screen.findByText('Começar plano')
+
+    fireEvent.click(screen.getByTestId(TEST_IDS.PLAN_PRIMARY_BUTTON))
+    fireEvent.click(screen.getByTestId(TEST_IDS.PLAN_PRIMARY_BUTTON))
+    await waitFor(() => expect(started).toHaveBeenCalledTimes(1))
+    expect(
+      screen.getByTestId(
+        `${TEST_IDS.PLAN_PRIMARY_BUTTON}${TEST_IDS.PRIMARY_BUTTON_SPINNER_SUFFIX}`,
+      ),
+    ).toBeTruthy()
+    expect(router.state.location.pathname).toBe(PLAN_ROUTE)
+
+    await act(async () => release())
+
+    await waitFor(() => expect(router.state.location.pathname).toBe(`${PLAN_ROUTE}/day/1`))
+    expect(started).toHaveBeenCalledTimes(1)
+  })
+
+  it('tells the person when the plan could not be started and stays on the screen', async () => {
+    server.use(
+      mockQuery('plan.detail', () => planDetail()),
+      mockTrpcError('plan.start', TRPC_ERROR_CODES.INTERNAL_SERVER_ERROR, 500),
+    )
+    const { router } = await renderPlan()
+    await screen.findByText('Começar plano')
+
+    fireEvent.click(screen.getByTestId(TEST_IDS.PLAN_PRIMARY_BUTTON))
+
+    await waitFor(() =>
+      expect(toast).toHaveBeenCalledWith('Não foi possível começar o plano agora.'),
+    )
+    expect(router.state.location.pathname).toBe(PLAN_ROUTE)
+    await waitFor(() =>
+      expect(
+        screen.queryByTestId(
+          `${TEST_IDS.PLAN_PRIMARY_BUTTON}${TEST_IDS.PRIMARY_BUTTON_SPINNER_SUFFIX}`,
+        ),
+      ).toBeNull(),
+    )
+    expect(screen.getByText('Começar plano')).toBeTruthy()
+  })
+
+  it('continues on the first day that is not done and marks the finished one', async () => {
+    server.use(
+      mockQuery('plan.detail', () => planDetail({ isEnrolled: true, completedDayNumbers: [1] })),
+    )
+    const { router } = await renderPlan()
+    await screen.findByText('Continuar plano')
+    expect(screen.getByTestId('plan-day-row-1-completed')).toBeTruthy()
+    expect(screen.queryByTestId('plan-day-row-2-completed')).toBeNull()
+
+    fireEvent.click(screen.getByTestId(TEST_IDS.PLAN_PRIMARY_BUTTON))
+
+    await waitFor(() => expect(router.state.location.pathname).toBe(`${PLAN_ROUTE}/day/2`))
+  })
+
+  it('disables the button once every day is done', async () => {
+    server.use(
+      mockQuery('plan.detail', () =>
+        planDetail({ isEnrolled: true, completedDayNumbers: [1, 2, 3] }),
+      ),
+    )
+    const { router } = await renderPlan()
+    await screen.findByText('Plano concluído')
+
+    const button = screen.getByTestId(TEST_IDS.PLAN_PRIMARY_BUTTON)
+    expect((button as HTMLButtonElement).disabled).toBe(true)
+    fireEvent.click(button)
+
+    expect(router.state.location.pathname).toBe(PLAN_ROUTE)
+  })
+
+  it('opens the day of the row that was clicked', async () => {
+    server.use(mockQuery('plan.detail', () => planDetail()))
+    const { router } = await renderPlan()
+    await screen.findByText('Voltar a acreditar')
+
+    fireEvent.click(screen.getByTestId(`${TEST_IDS.PLAN_DAY_ROW_PREFIX}3`))
+
+    await waitFor(() => expect(router.state.location.pathname).toBe(`${PLAN_ROUTE}/day/3`))
+  })
+
+  it('lists the summary of each day under Conteúdo', async () => {
+    server.use(mockQuery('plan.detail', () => planDetail()))
+    await renderPlan()
+    await screen.findByText('Conteúdo')
+
+    fireEvent.click(screen.getByTestId(`${TEST_IDS.PLAN_SEGMENT_PREFIX}content`))
+    for (const day of DAYS) {
+      expect(screen.getByText(day.summary)).toBeTruthy()
+      expect(screen.getByText(day.title)).toBeTruthy()
+    }
+    expect(screen.queryByTestId(`${TEST_IDS.PLAN_DAY_ROW_PREFIX}1`)).toBeNull()
+
+    fireEvent.click(screen.getByTestId(`${TEST_IDS.PLAN_SEGMENT_PREFIX}overview`))
+    expect(screen.getByTestId(`${TEST_IDS.PLAN_DAY_ROW_PREFIX}1`)).toBeTruthy()
+  })
+
+  it('lists the reflections of the person under Reflexões', async () => {
+    server.use(
+      mockQuery('plan.detail', () =>
+        planDetail({ isEnrolled: true, completedDayNumbers: [1], reflections: [REFLECTION] }),
+      ),
+    )
+    await renderPlan()
+    await screen.findByText('Reflexões')
+
+    fireEvent.click(screen.getByTestId(`${TEST_IDS.PLAN_SEGMENT_PREFIX}reflections`))
+
+    expect(screen.getByText('Hoje consegui parar um pouco.')).toBeTruthy()
+    expect(screen.getByText('Respirar e reconhecer')).toBeTruthy()
+    expect(screen.getByText('18 de outubro')).toBeTruthy()
+    expect(screen.queryByTestId(TEST_IDS.PLAN_REFLECTIONS_EMPTY)).toBeNull()
+  })
+
+  it('shows a welcoming message when there is no reflection yet', async () => {
+    server.use(mockQuery('plan.detail', () => planDetail()))
+    await renderPlan()
+    await screen.findByText('Reflexões')
+
+    fireEvent.click(screen.getByTestId(`${TEST_IDS.PLAN_SEGMENT_PREFIX}reflections`))
+
+    expect(
+      screen.getByText('Quando você concluir um dia e contar como foi, sua reflexão aparece aqui.'),
+    ).toBeTruthy()
+  })
+
+  it('shows skeletons, never a spinner, while the plan loads', async () => {
+    let release = () => {}
+    const gate = new Promise<void>((resolve) => {
+      release = resolve
+    })
+    server.use(
+      http.get(`${TEST_API_BASE_URL}/trpc/plan.detail`, async () => {
+        await gate
+        return HttpResponse.json({ result: { data: planDetail() } })
+      }),
+    )
+    await renderPlan()
+
+    expect(screen.getAllByRole('progressbar', { name: 'Carregando' }).length).toBeGreaterThan(0)
+    expect(screen.queryByTestId(TEST_IDS.PLAN_PRIMARY_BUTTON)).toBeNull()
+
+    await act(async () => release())
+    await screen.findByText('Quando o desânimo pesar')
+    expect(screen.queryAllByRole('progressbar')).toHaveLength(0)
+  })
+
+  it('shows the error state when the plan does not exist and tries again on demand', async () => {
+    server.use(mockTrpcError('plan.detail', TRPC_ERROR_CODES.NOT_FOUND, 404))
+    await renderPlan()
+    await screen.findByText('Tentar de novo')
+    expect(screen.getByText('Não foi possível carregar agora.')).toBeTruthy()
+    expect(screen.queryByTestId(TEST_IDS.PLAN_PRIMARY_BUTTON)).toBeNull()
+
+    server.use(mockQuery('plan.detail', () => planDetail()))
+    fireEvent.click(screen.getByText('Tentar de novo'))
+
+    await screen.findByText('Quando o desânimo pesar')
+  })
+
+  it('goes back when there is a page to return to and sends the three dots to coming soon', async () => {
+    server.use(mockQuery('plan.detail', () => planDetail()))
+    const { router } = await renderPlan()
+    const back = vi.spyOn(router.history, 'back').mockImplementation(() => {})
+    vi.spyOn(router.history, 'canGoBack').mockReturnValue(true)
+
+    fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
+    expect(back).toHaveBeenCalledTimes(1)
+    fireEvent.click(screen.getByRole('button', { name: 'Mais opções' }))
+    expect(toast).toHaveBeenCalledWith('Em breve')
+    await screen.findByText('Quando o desânimo pesar')
+  })
+
+  it('goes to the plan list when the plan was opened directly', async () => {
+    server.use(mockQuery('plan.detail', () => planDetail()))
+    const { router } = await renderPlan()
+    vi.spyOn(router.history, 'canGoBack').mockReturnValue(false)
+
+    fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
+
+    await waitFor(() => expect(router.state.location.pathname).toBe('/plans'))
+    await screen.findByText('Quando o desânimo pesar')
+  })
+})

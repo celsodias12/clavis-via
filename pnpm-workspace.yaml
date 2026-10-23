@@ -1,0 +1,81 @@
+packages:
+  - api
+  - mobile
+  - infra
+  - packages/shared
+  - web
+
+engineStrict: true
+saveExact: true
+
+# Expo / React Native need a flat node_modules (Metro + native autolinking
+# assume hoisting); pnpm's default isolated layout breaks many RN libraries.
+nodeLinker: hoisted
+
+# Written by `pnpm import`: these exact versions (picked by create-expo-app)
+# were younger than pnpm's minimumReleaseAge when the npm lockfile was migrated.
+minimumReleaseAgeExclude:
+  - '@expo/cli@58.1.13'
+  - '@expo/metro-config@58.0.15'
+  - '@expo/router-server@58.0.15'
+  - '@expo/ui@58.0.21'
+  - babel-preset-expo@58.0.18
+  - expo-asset@58.0.17
+  - expo-file-system@58.0.10
+  - expo-font@58.0.9
+  - expo-image@58.0.16
+  - expo-modules-cli@0.3.1
+  - expo-modules-core@58.0.23
+  - expo-modules-jsi@58.0.16
+  - expo-router@58.0.24
+  - expo@58.0.16
+  - '@cloudflare/vitest-plugin@1.4.5'
+  - '@cloudflare/workerd-darwin-64@1.20261019.1'
+  - '@cloudflare/workerd-darwin-arm64@1.20261019.1'
+  - '@cloudflare/workerd-linux-64@1.20261019.1'
+  - '@cloudflare/workerd-linux-arm64@1.20261019.1'
+  - '@cloudflare/workerd-windows-64@1.20261019.1'
+  - miniflare@5.20261019.0-beta
+  - workerd@1.20261019.1
+  - wrangler@4.151.2
+  - expo-localization@58.0.5
+  - '@clerk/backend@3.26.1'
+  - '@clerk/testing@2.2.49'
+
+allowBuilds:
+  esbuild: true
+  workerd: true
+  lefthook: true
+  unrs-resolver: true
+  '@parcel/watcher': false
+  browser-tabs-lock: false
+  core-js: false
+
+# Transitive dependencies pinned to vulnerable versions that do have a patched
+# release: force the patched one instead of ignoring the advisory.
+overrides:
+  # GHSA-w5hq-g745-h8pq: xcode (expo config plugins) pins uuid 7; only v4 is used.
+  xcode>uuid: 11.1.1
+  # GHSA-67mh-4wv8-2f99: legacy drizzle-kit loader (dev tooling) pins esbuild 0.18.
+  '@esbuild-kit/core-utils>esbuild': 0.25.12
+  # Vite+ requires Vite and Vitest to resolve to its bundled builds (same Vitest as the API).
+  'vite@*': npm:@voidzero-dev/vite-plus-core@1.3.0
+  'vitest@*': 5.0.5
+  # @clerk/backend (API) peers on a newer React, which the hoisted linker installs as a second copy next to
+  # @clerk/shared and breaks hooks in the web ("Invalid hook call"): keep one React in the workspace.
+  react: 19.3.0
+  react-dom: 19.3.0
+
+auditConfig:
+  ignoreGhsas:
+    # No patched version exists. node-forge is used only by the Expo CLI dev server.
+    - GHSA-86w9-cpqp-85rv
+    # No patched version exists. braces is reached through jest-expo and through metro-file-map > @expo/metro > @expo/cli (build and test tooling only).
+    - GHSA-vfj7-8cjw-p6xm
+    # No patched version exists. sprintf-js is reached only through jest-expo (test tooling).
+    - GHSA-hp3w-g68c-fv3c
+
+# Shared Vite+ versions for the web and shared packages.
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@1.3.0
+  vite-plus: 1.3.0

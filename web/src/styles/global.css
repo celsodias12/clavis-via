@@ -1,0 +1,239 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/*
+ * Palette tokens. The values live in `@clavis-via/shared` (one source for app and web) and are written on
+ * `:root` at runtime by <ThemeVariables />. Each token below only registers the name with Tailwind so
+ * utilities such as `bg-navy` exist; its value is the runtime variable of the same name, which wins over this
+ * layered declaration because it is unlayered. A test keeps this list in sync with the shared palette.
+ */
+@theme inline {
+  --color-brand: var(--color-brand);
+  --color-title: var(--color-title);
+  --color-body: var(--color-body);
+  --color-link: var(--color-link);
+  --color-link-strong: var(--color-link-strong);
+  --color-navy: var(--color-navy);
+  --color-primary-light: var(--color-primary-light);
+  --color-wave-top: var(--color-wave-top);
+  --color-check-in-background-top: var(--color-check-in-background-top);
+  --color-check-in-background-bottom: var(--color-check-in-background-bottom);
+  --color-tile-selected-border: var(--color-tile-selected-border);
+  --color-emotions-heavy-tile: var(--color-emotions-heavy-tile);
+  --color-emotions-heavy-fill: var(--color-emotions-heavy-fill);
+  --color-emotions-heavy-ink: var(--color-emotions-heavy-ink);
+  --color-emotions-anxious-tile: var(--color-emotions-anxious-tile);
+  --color-emotions-anxious-fill: var(--color-emotions-anxious-fill);
+  --color-emotions-anxious-ink: var(--color-emotions-anxious-ink);
+  --color-emotions-discouraged-tile: var(--color-emotions-discouraged-tile);
+  --color-emotions-discouraged-fill: var(--color-emotions-discouraged-fill);
+  --color-emotions-discouraged-ink: var(--color-emotions-discouraged-ink);
+  --color-emotions-irritated-tile: var(--color-emotions-irritated-tile);
+  --color-emotions-irritated-fill: var(--color-emotions-irritated-fill);
+  --color-emotions-irritated-ink: var(--color-emotions-irritated-ink);
+  --color-emotions-sensitive-tile: var(--color-emotions-sensitive-tile);
+  --color-emotions-sensitive-fill: var(--color-emotions-sensitive-fill);
+  --color-emotions-sensitive-ink: var(--color-emotions-sensitive-ink);
+  --color-emotions-at-peace-tile: var(--color-emotions-at-peace-tile);
+  --color-emotions-at-peace-fill: var(--color-emotions-at-peace-fill);
+  --color-emotions-at-peace-ink: var(--color-emotions-at-peace-ink);
+  --color-emotions-hopeful-tile: var(--color-emotions-hopeful-tile);
+  --color-emotions-hopeful-fill: var(--color-emotions-hopeful-fill);
+  --color-emotions-hopeful-ink: var(--color-emotions-hopeful-ink);
+  --color-emotions-other-tile: var(--color-emotions-other-tile);
+  --color-emotions-other-fill: var(--color-emotions-other-fill);
+  --color-emotions-other-ink: var(--color-emotions-other-ink);
+  --color-primary-accent: var(--color-primary-accent);
+  --color-home-background: var(--color-home-background);
+  --color-home-heading: var(--color-home-heading);
+  --color-home-brand-text: var(--color-home-brand-text);
+  --color-home-card-label: var(--color-home-card-label);
+  --color-avatar-background: var(--color-avatar-background);
+  --color-avatar-initial: var(--color-avatar-initial);
+  --color-home-card-background: var(--color-home-card-background);
+  --color-home-card-shadow: var(--color-home-card-shadow);
+  --color-daily-key-card-shadow: var(--color-daily-key-card-shadow);
+  --color-verse-tile: var(--color-verse-tile);
+  --color-verse-book: var(--color-verse-book);
+  --color-home-chevron: var(--color-home-chevron);
+  --color-home-progress-track: var(--color-home-progress-track);
+  --color-home-progress-fill: var(--color-home-progress-fill);
+  --color-tab-bar-background: var(--color-tab-bar-background);
+  --color-tab-bar-separator: var(--color-tab-bar-separator);
+  --color-tab-bar-active: var(--color-tab-bar-active);
+  --color-tab-bar-inactive-icon: var(--color-tab-bar-inactive-icon);
+  --color-tab-bar-inactive-label: var(--color-tab-bar-inactive-label);
+  --color-pill-background: var(--color-pill-background);
+  --color-plan-card-shadow: var(--color-plan-card-shadow);
+  --color-plan-sheet-background: var(--color-plan-sheet-background);
+  --color-plan-accent: var(--color-plan-accent);
+  --color-plan-day-circle: var(--color-plan-day-circle);
+  --color-plan-segment-pill: var(--color-plan-segment-pill);
+  --color-plan-calendar-icon: var(--color-plan-calendar-icon);
+  --color-day-chip-outline: var(--color-day-chip-outline);
+  --color-day-previous-button: var(--color-day-previous-button);
+  --color-day-video-play-fill: var(--color-day-video-play-fill);
+  --color-day-action-card: var(--color-day-action-card);
+  --color-day-action-check: var(--color-day-action-check);
+  --color-day-tip-card: var(--color-day-tip-card);
+  --color-day-tip-text: var(--color-day-tip-text);
+  --color-day-tip-icon: var(--color-day-tip-icon);
+  --color-reflection-field-border: var(--color-reflection-field-border);
+  --color-reflection-field-background: var(--color-reflection-field-background);
+  --color-practice-background: var(--color-practice-background);
+  --color-practice-subtitle: var(--color-practice-subtitle);
+  --color-practice-description: var(--color-practice-description);
+  --color-practice-icon: var(--color-practice-icon);
+  --color-practice-icon-circle: var(--color-practice-icon-circle);
+  --color-practice-play-top: var(--color-practice-play-top);
+  --color-practice-play-bottom: var(--color-practice-play-bottom);
+  --color-practice-play-ring: var(--color-practice-play-ring);
+  --color-practice-track: var(--color-practice-track);
+  --color-practice-fill: var(--color-practice-fill);
+  --color-practice-knob: var(--color-practice-knob);
+  --color-practice-label: var(--color-practice-label);
+  --color-practice-wave-blue: var(--color-practice-wave-blue);
+  --color-practice-wave-pink: var(--color-practice-wave-pink);
+  --color-profile-card: var(--color-profile-card);
+  --color-profile-square: var(--color-profile-square);
+  --color-profile-row-icon: var(--color-profile-row-icon);
+  --color-profile-chevron: var(--color-profile-chevron);
+  --color-profile-divider: var(--color-profile-divider);
+  --color-emotions-segment-solid: var(--color-emotions-segment-solid);
+  --color-emotions-chart-line: var(--color-emotions-chart-line);
+  --color-emotions-chart-point: var(--color-emotions-chart-point);
+  --color-emotions-area-top: var(--color-emotions-area-top);
+  --color-emotions-area-bottom: var(--color-emotions-area-bottom);
+  --color-insight-balanced-circle: var(--color-insight-balanced-circle);
+  --color-insight-balanced-ink: var(--color-insight-balanced-ink);
+  --color-insight-anxiety-circle: var(--color-insight-anxiety-circle);
+  --color-insight-anxiety-fill: var(--color-insight-anxiety-fill);
+  --color-insight-anxiety-ink: var(--color-insight-anxiety-ink);
+  --color-insight-routine-circle: var(--color-insight-routine-circle);
+  --color-insight-routine-fill: var(--color-insight-routine-fill);
+  --color-insight-routine-ink: var(--color-insight-routine-ink);
+  --color-journey-calendar-icon: var(--color-journey-calendar-icon);
+  --color-journey-day-empty-ring: var(--color-journey-day-empty-ring);
+  --color-journey-day-label: var(--color-journey-day-label);
+  --color-journey-achievement-icon: var(--color-journey-achievement-icon);
+  --color-journey-achievement-label: var(--color-journey-achievement-label);
+  --color-journey-achievement-chevron: var(--color-journey-achievement-chevron);
+  --color-journey-link: var(--color-journey-link);
+  --color-chat-panel: var(--color-chat-panel);
+  --color-chat-bubble-assistant: var(--color-chat-bubble-assistant);
+  --color-chat-bubble-assistant-text: var(--color-chat-bubble-assistant-text);
+  --color-chat-icon: var(--color-chat-icon);
+  --color-chat-icon-ink: var(--color-chat-icon-ink);
+  --color-chat-quick-reply-text: var(--color-chat-quick-reply-text);
+  --color-chat-input-background: var(--color-chat-input-background);
+  --color-chat-input-border: var(--color-chat-input-border);
+  --color-chat-input-placeholder: var(--color-chat-input-placeholder);
+  --color-chat-send-background: var(--color-chat-send-background);
+  --color-chat-time: var(--color-chat-time);
+  --color-chat-notice: var(--color-chat-notice);
+  --color-field-border: var(--color-field-border);
+  --color-field-background: var(--color-field-background);
+  --color-placeholder: var(--color-placeholder);
+  --color-white: var(--color-white);
+  --color-error: var(--color-error);
+  --color-button-shadow: var(--color-button-shadow);
+}
+
+/* Families of the app fonts (loaded by @fontsource in main.tsx). Medium and semibold are weights of the same family. */
+@theme {
+  --font-brand: "Jost", sans-serif;
+  --font-title: "Petrona", serif;
+  --font-body: "Source Sans 3", sans-serif;
+}
+
+/* shadcn/ui semantic tokens, mapped to the app palette. */
+@theme inline {
+  --font-heading: var(--font-title);
+  --font-sans: var(--font-body);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: var(--color-home-background);
+  --foreground: var(--color-title);
+  --card: var(--color-home-card-background);
+  --card-foreground: var(--color-title);
+  --popover: var(--color-white);
+  --popover-foreground: var(--color-title);
+  --primary: var(--color-navy);
+  --primary-foreground: var(--color-white);
+  --secondary: var(--color-pill-background);
+  --secondary-foreground: var(--color-navy);
+  --muted: var(--color-pill-background);
+  --muted-foreground: var(--color-body);
+  --accent: var(--color-pill-background);
+  --accent-foreground: var(--color-title);
+  --destructive: var(--color-error);
+  --border: var(--color-field-border);
+  --input: var(--color-field-border);
+  --ring: var(--color-primary-light);
+  --chart-1: var(--color-primary-accent);
+  --chart-2: var(--color-plan-accent);
+  --chart-3: var(--color-practice-icon);
+  --chart-4: var(--color-emotions-chart-line);
+  --chart-5: var(--color-journey-calendar-icon);
+  --radius: 0.625rem;
+  --sidebar: var(--color-white);
+  --sidebar-foreground: var(--color-title);
+  --sidebar-primary: var(--color-navy);
+  --sidebar-primary-foreground: var(--color-white);
+  --sidebar-accent: var(--color-pill-background);
+  --sidebar-accent-foreground: var(--color-title);
+  --sidebar-border: var(--color-field-border);
+  --sidebar-ring: var(--color-primary-light);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}

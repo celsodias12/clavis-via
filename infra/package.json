@@ -1,0 +1,22 @@
+{
+  "name": "@clavis-via/infra",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=24.22.0",
+    "pnpm": ">=11.28.5"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test",
+    "test:cov": "node --test --experimental-test-coverage --test-coverage-lines=100 --test-coverage-branches=100 --test-coverage-functions=100 --test-coverage-exclude='src/bin/**' --test-coverage-exclude='**/*.test.ts'",
+    "e2e": "node --env-file=.env.local src/bin/run-e2e.ts",
+    "e2e:web": "node --env-file=.env.local src/bin/run-e2e-web.ts",
+    "demo-account": "node --env-file=.env.local src/bin/create-demo-account.ts"
+  }
+}

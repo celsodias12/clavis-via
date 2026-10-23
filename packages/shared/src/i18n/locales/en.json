@@ -1,0 +1,320 @@
+{
+  "common": {
+    "loading": "Loading",
+    "tryAgain": "Try again",
+    "comingSoon": "Coming soon",
+    "back": "Back",
+    "close": "Close",
+    "loadError": "Could not load right now.",
+    "more": "More options",
+    "search": "Search",
+    "notifications": "Notifications",
+    "settings": "Settings",
+    "navigation": "Navigation"
+  },
+  "welcome": {
+    "brand": "CLAVIS VIA",
+    "taglineFirst": "Your way",
+    "taglineSecond": "back to yourself,",
+    "taglineThird": "every day.",
+    "start": "Start my journey",
+    "haveAccount": "I already have an account"
+  },
+  "screen": {
+    "authentication": {
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@email.com",
+      "passwordLabel": "Password",
+      "errors": {
+        "firstNameRequired": "Enter your name.",
+        "firstNameTooLong": "The name can have at most 64 characters.",
+        "emailInvalid": "Enter a valid email.",
+        "passwordTooShort": "The password needs at least 8 characters.",
+        "passwordTooLong": "The password can have at most 72 characters.",
+        "passwordRequired": "Enter your password.",
+        "passwordCompromised": "This password appeared in a data breach. Choose another one.",
+        "emailInUse": "This email is already in use.",
+        "invalidCredentials": "Incorrect email or password.",
+        "tooManyRequests": "Too many attempts. Try again in a few minutes.",
+        "generic": "Something went wrong. Try again."
+      }
+    },
+    "signUp": {
+      "title": "Create your account",
+      "subtitle": "Your path starts here.",
+      "firstNameLabel": "Name",
+      "firstNamePlaceholder": "What should we call you?",
+      "passwordPlaceholder": "At least 8 characters",
+      "submit": "Create account",
+      "footerQuestion": "Already have an account?",
+      "footerAction": "Sign in"
+    },
+    "signIn": {
+      "title": "Sign in to\nyour account",
+      "subtitle": "Use the email and password\nyou registered with.",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Sign in",
+      "footerQuestion": "Don't have an account yet?",
+      "footerAction": "Create account"
+    },
+    "checkIn": {
+      "title": "How are you\narriving today?",
+      "subtitle": "Choose what best represents\nyour moment right now.",
+      "continue": "Continue",
+      "otherLabel": "Tell us in a few words",
+      "saveError": "We could not save right now.",
+      "groupLabel": "How are you arriving today?",
+      "states": {
+        "heavy": "Heavy",
+        "anxious": "Anxious",
+        "discouraged": "Discouraged",
+        "irritated": "Irritated",
+        "sensitive": "Sensitive",
+        "atPeace": "At peace",
+        "hopeful": "Hopeful",
+        "other": "Other"
+      },
+      "errors": {
+        "otherTextRequired": "Tell us in a few words.",
+        "stateRequired": "Choose how you are."
+      }
+    },
+    "home": {
+      "greeting": {
+        "morning": "Good morning, {{name}}",
+        "afternoon": "Good afternoon, {{name}}",
+        "evening": "Good evening, {{name}}",
+        "morningAnonymous": "Good morning",
+        "afternoonAnonymous": "Good afternoon",
+        "eveningAnonymous": "Good evening"
+      },
+      "subtitle": "Good to have you here today.",
+      "keyLabel": "TODAY'S KEY",
+      "practiceButton": "See today's practice",
+      "inviteTitle": "How are you today?",
+      "inviteText": "Do your check-in to receive the day's key.",
+      "inviteButton": "Check in",
+      "notifications": "Notifications",
+      "profile": "Profile",
+      "verseTitle": "A minute with God",
+      "verseQuote": "“{{text}}”",
+      "verseReference": "{{reference}} ({{translation}})",
+      "verseTranslation": "adapted",
+      "versePlay": "Listen to the verse",
+      "journeyTitle": "Continue your journey",
+      "journeyDay": "Day {{number}} of {{total}}",
+      "journeyEmpty": "Choose a plan to get started.",
+      "journeyProgress": "Plan progress"
+    },
+    "plans": {
+      "title": "Plans",
+      "search": "Search",
+      "filters": {
+        "all": "All",
+        "emotions": "Emotions",
+        "relationships": "Relationships",
+        "faith": "Faith"
+      },
+      "duration_one": "{{count}} day",
+      "duration_other": "{{count}} days",
+      "empty": "No plans in this category for now.",
+      "showAll": "See all plans",
+      "note": "Fictional content, created for demonstration."
+    },
+    "plan": {
+      "dailyTime": "5 to 10 min a day",
+      "dayLabel": "Day {{number}}",
+      "dayCompleted": "Day completed",
+      "more": "More options",
+      "start": "Start plan",
+      "continue": "Continue plan",
+      "completed": "Plan completed",
+      "startError": "We couldn't start the plan right now.",
+      "reflectionsEmpty": "When you finish a day and share how it went, your reflection shows up here.",
+      "tabs": {
+        "overview": "Overview",
+        "content": "Content",
+        "reflections": "Reflections"
+      }
+    },
+    "journey": {
+      "title": "My journey",
+      "segments": {
+        "overview": "Overview",
+        "emotions": "My emotions",
+        "achievements": "My achievements"
+      },
+      "streakLabel_zero": "days in a row",
+      "streakLabel_one": "day in a row",
+      "streakLabel_other": "days in a row",
+      "calendar": "Open calendar",
+      "dayWithCheckIn": "{{day}}: checked in",
+      "dayWithoutCheckIn": "{{day}}: no check-in",
+      "phrase": "“You don't have to be perfect to be making progress.”",
+      "achievementsTitle": "My achievements",
+      "viewAll": "See all",
+      "achievements": {
+        "weeklyCheckIns_one": "I checked in {{count}} time this week",
+        "weeklyCheckIns_other": "I checked in {{count}} times this week",
+        "planProgress": "{{plan}}: {{completed}} of {{total}} days",
+        "completedPlans_one": "I finished {{count}} plan",
+        "completedPlans_other": "I finished {{count}} plans",
+        "completedPractices_one": "I did {{count}} practice",
+        "completedPractices_other": "I did {{count}} practices",
+        "completedActions_one": "I completed {{count}} action of the day",
+        "completedActions_other": "I completed {{count}} actions of the day"
+      },
+      "empty": "Your achievements show up here as you use the app."
+    },
+    "conversation": {
+      "title": "Chat",
+      "history": "History",
+      "greeting": "Hi, {{name}}. I'm here with you. How are you feeling today?",
+      "greetingAnonymous": "Hi. I'm here with you. How are you feeling today?",
+      "assistantIcon": "CLAVIS assistant",
+      "quickReplies": {
+        "talk": "I want to talk",
+        "direction": "I need direction",
+        "practice": "I want to do a practice",
+        "prayer": "I want a moment with God"
+      },
+      "typing": "typing…",
+      "inputLabel": "Message",
+      "inputPlaceholder": "Write here what you are feeling...",
+      "send": "Send",
+      "simulatedNotice": "Simulated replies in this demo version.",
+      "disclaimer": "Replies based on the CLAVIS universe.\nThis is not a medical or psychological treatment service.",
+      "sendError": "Could not send right now.",
+      "dailyLimit": "You have reached the message limit for now. Try again later."
+    },
+    "planDay": {
+      "headerTitle": "Day {{number}} of {{total}}",
+      "segments": {
+        "content": "Content",
+        "reflection": "Reflection",
+        "action": "Action",
+        "prayer": "Prayer"
+      },
+      "todayMessage": "Today's message",
+      "goToAction": "Go to today's action",
+      "previous": "Previous",
+      "next": "Next",
+      "clock": "{{clock}} min",
+      "playVideo": "Play video"
+    },
+    "dayAction": {
+      "headerTitle": "Action of the day",
+      "tipTitle": "Thalita's tip",
+      "tipQuote": "“{{tip}}”",
+      "complete": "Mark as done",
+      "completed": "Day completed",
+      "completedToast": "Day completed.",
+      "reflectionLabel": "How was it for you?",
+      "reflectionPlaceholder": "Write your reflection here...",
+      "saveError": "We couldn't save right now.",
+      "errors": {
+        "reflectionTooLong": "Write at most 1000 characters."
+      }
+    },
+    "practice": {
+      "headerTitle": "Today's practice",
+      "duration": {
+        "minutes_one": "{{count}} minute",
+        "minutes_other": "{{count}} minutes",
+        "mixed": "{{minutes}} min {{seconds}} s"
+      },
+      "play": "Play",
+      "pause": "Pause",
+      "again": "Practice again",
+      "done": "Practice recorded. Come back whenever you like.",
+      "saveError": "We couldn't record the practice right now.",
+      "progress": "Practice progress"
+    },
+    "profile": {
+      "title": "My profile",
+      "subtitle": "On a journey of rebuilding",
+      "changePhoto": "Change photo",
+      "purposeTitle": "My purpose",
+      "purposeText": "To live a life aligned with who I am, with lightness, faith and direction.",
+      "menu": {
+        "subscription": "My subscription",
+        "settings": "Settings",
+        "notifications": "Notifications",
+        "privacy": "Privacy",
+        "help": "Help center",
+        "signOut": "Sign out"
+      }
+    },
+    "emotions": {
+      "title": "My emotions",
+      "periods": {
+        "week": "Week",
+        "month": "Month",
+        "year": "Year"
+      },
+      "weekdays": {
+        "monday": "Mon",
+        "tuesday": "Tue",
+        "wednesday": "Wed",
+        "thursday": "Thu",
+        "friday": "Fri",
+        "saturday": "Sat",
+        "sunday": "Sun"
+      },
+      "monthInitials": {
+        "january": "J",
+        "february": "F",
+        "march": "M",
+        "april": "A",
+        "may": "M",
+        "june": "J",
+        "july": "J",
+        "august": "A",
+        "september": "S",
+        "october": "O",
+        "november": "N",
+        "december": "D"
+      },
+      "dayLabel": "{{day}}: {{state}}",
+      "dayWithoutCheckIn": "{{day}}: no check-in",
+      "chartLabel": "Chart of your emotions",
+      "insightsTitle": "Key insights",
+      "insights": {
+        "balancedDays": {
+          "title": "More balanced days",
+          "text": {
+            "week": "You logged more peaceful days this week.",
+            "month": "You logged more peaceful days this month.",
+            "year": "You logged more peaceful days this year."
+          }
+        },
+        "lessAnxiety": {
+          "title": "Less anxiety",
+          "text": {
+            "week": "Your anxiety decreased {{percent}}% compared to last week.",
+            "month": "Your anxiety decreased {{percent}}% compared to last month.",
+            "year": "Your anxiety decreased {{percent}}% compared to last year."
+          }
+        },
+        "routineHelps": {
+          "title": "Routine helps you",
+          "text": "On the days you did the practice, your mood was better."
+        }
+      },
+      "empty": "You haven't checked in during this period yet.",
+      "emptyAction": "Check in",
+      "noInsights": "Insights appear as you log your days."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "message": "This path does not exist.",
+      "action": "Go to Home"
+    }
+  },
+  "tabs": {
+    "home": "Home",
+    "plans": "Plans",
+    "conversation": "Chat",
+    "journey": "Journey"
+  }
+}

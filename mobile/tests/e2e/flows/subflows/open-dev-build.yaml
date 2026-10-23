@@ -1,0 +1,9 @@
+# Falls back to the deep link when the dev launcher screen is still showing
+# (the launcher only auto-loads defaultLaunchURL for a LAUNCHER intent).
+appId: com.celsodias.clavisvia
+---
+- runFlow:
+    when:
+      visible: Development Servers
+    commands:
+      - openLink: exp+clavis-via://expo-development-client/?url=http%3A%2F%2Flocalhost%3A8081

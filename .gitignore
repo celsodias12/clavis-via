@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+
+# a nested lockfile means a pnpm install ran outside the workspace; only the root one is real
+**/pnpm-lock.yaml
+!/pnpm-lock.yaml
+
+# build output and coverage
+dist/
+coverage/
+web/test-results/
+web/playwright-report/
+*.tsbuildinfo
+
+# local env files (keep the example)
+.env*
+!.env.example
+!.env.production.example
+.dev.vars*
+!.dev.vars.example
+
+# macOS
+.DS_Store
+
+example
+
+# AI tooling output (brainstorm mockups, specs, Firecrawl)
+.superpowers/
+.firecrawl/
+
+# local documentation and evaluation evidence
+/docs/
+
+# Wrangler local state
+.wrangler/

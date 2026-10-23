@@ -1,0 +1,13 @@
+# The first load after a clear is sometimes slow, so a stuck launch is retried from scratch.
+appId: com.celsodias.clavisvia
+---
+- retry:
+    maxRetries: 2
+    commands:
+      - launchApp:
+          clearState: true
+      - runFlow: open-dev-build.yaml
+      - extendedWaitUntil:
+          visible:
+            id: welcome-start
+          timeout: 45000

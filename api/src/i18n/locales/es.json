@@ -1,0 +1,450 @@
+{
+  "practices": {
+    "guided-breathing": {
+      "title": "Respiración guiada",
+      "description": "Haz una pausa para calmar la mente, conectar con tu cuerpo y volver al presente."
+    },
+    "body-release": {
+      "title": "Liberar el cuerpo",
+      "description": "Recorre tu cuerpo con atención, del rostro a los pies, y suelta la tensión que encuentres."
+    },
+    "small-steps": {
+      "title": "Un paso posible",
+      "description": "Elige una pequeña acción para hoy e imagina con calma cada paso para realizarla."
+    },
+    "pause-before-reacting": {
+      "title": "Pausa antes de reaccionar",
+      "description": "Respira despacio, nombra lo que sientes y deja que baje la intensidad antes de decidir."
+    },
+    "gentle-welcome": {
+      "title": "Acoger lo que sientes",
+      "description": "Observa tu emoción sin intentar cambiarla y háblate como lo harías con una amiga."
+    },
+    "quiet-gratitude": {
+      "title": "Gratitud en silencio",
+      "description": "Recuerda tres cosas sencillas que van bien hoy y dedica un momento a cada una."
+    },
+    "daily-intention": {
+      "title": "Intención del día",
+      "description": "Decide cómo quieres sentirte hoy y elige un gesto que te acerque a ello."
+    },
+    "inner-listening": {
+      "title": "Escucha interior",
+      "description": "Siéntate en silencio y percibe lo que necesita espacio en ti, sin prisa por nombrarlo."
+    }
+  },
+  "dailyKeys": {
+    "heavy": {
+      "title": "Un paso a la vez",
+      "text": "Hoy no tienes que poder con todo. Elige algo pequeño y permítete descansar después."
+    },
+    "anxious": {
+      "title": "Voz y límites",
+      "text": "Quizá hoy no necesites dar tantas explicaciones. Empieza por reconocer lo que es verdad para ti."
+    },
+    "discouraged": {
+      "title": "Pequeños comienzos",
+      "text": "El desánimo también pasa. Un pequeño gesto hoy muestra que sigues avanzando."
+    },
+    "irritated": {
+      "title": "Antes de responder",
+      "text": "Sentir irritación es humano. Puedes darte un momento antes de responder."
+    },
+    "sensitive": {
+      "title": "Trátate con ternura",
+      "text": "La sensibilidad no es debilidad. Trátate con la misma bondad que ofreces a los demás."
+    },
+    "at-peace": {
+      "title": "Conservar la calma",
+      "text": "Qué bueno sentir paz. Percibe qué te trajo hasta aquí y llévalo contigo durante el día."
+    },
+    "hopeful": {
+      "title": "Abrir espacio a lo nuevo",
+      "text": "La esperanza es un buen comienzo. Dale hoy un primer gesto concreto."
+    },
+    "other": {
+      "title": "A tu manera",
+      "text": "Lo que sientes merece espacio, incluso sin nombre. Empieza por escuchar lo que es verdad ahora."
+    }
+  },
+  "plans": {
+    "when-discouragement-weighs": {
+      "title": "Cuando pesa el desánimo",
+      "description": "Un plan breve para respirar, ordenar tus pensamientos y encontrar pequeños motivos para seguir."
+    },
+    "after-a-rejection": {
+      "title": "Después de un rechazo",
+      "description": "Siete días para acoger el dolor del rechazo, recordar tu valor y seguir adelante en paz."
+    },
+    "learning-to-set-boundaries": {
+      "title": "Aprender a poner límites",
+      "description": "Siete días para reconocer tus límites, decir no con amabilidad y reencontrarte contigo misma."
+    },
+    "when-your-faith-is-tired": {
+      "title": "Cuando tu fe está cansada",
+      "description": "Cinco días para acoger la espera y las dudas y redescubrir la presencia de Dios en lo cotidiano."
+    },
+    "finding-direction-again": {
+      "title": "Volver a encontrar el rumbo",
+      "description": "Siete días para calmar la mente, escuchar lo importante y dar el próximo paso con claridad."
+    }
+  },
+  "days": {
+    "when-discouragement-weighs": {
+      "1": {
+        "title": "Respirar y reconocer",
+        "summary": "Haz una pausa y reconoce cómo estás de verdad hoy.",
+        "message": "Antes de exigirte fuerza, respira. No todos los días tienen que ser productivos. Hoy basta con reconocer cómo estás y permitirte empezar de nuevo.",
+        "reflection": "¿Qué intenta decirte tu cuerpo ahora? Poner nombre al cansancio o la tristeza es el primer paso para cuidarte con sinceridad.",
+        "action": "Respira hondo cinco veces, contando hasta cuatro al inhalar y al exhalar.",
+        "tip": "Reconocer lo que sientes no significa resolverlo todo ahora.",
+        "prayer": "Señor, llego cansada y quiero ser sincera. Calma mi corazón, ayúdame a respirar y recuérdame que no tengo que cargar con todo sola. Amén."
+      },
+      "2": {
+        "title": "Pequeños movimientos",
+        "summary": "Cuando todo parece demasiado grande, empieza con un gesto pequeño.",
+        "message": "El desánimo puede hacer que todo parezca enorme. No tienes que resolver la semana entera. Elige un paso posible y deja que sea suficiente por hoy.",
+        "reflection": "¿Qué es lo más pequeño que podrías hacer hoy y que seguiría siendo un avance? Incluso abrir una ventana o responder un mensaje cuenta.",
+        "action": "Elige una tarea de cinco minutos y haz solo eso, sin exigirte más.",
+        "tip": "Los pasos pequeños también llegan lejos cuando son constantes.",
+        "prayer": "Padre, mis fuerzas son pocas, pero deseo seguir. Enséñame a dar un paso a la vez y a confiar en que caminas conmigo. Amén."
+      },
+      "3": {
+        "title": "Volver a creer",
+        "summary": "Redescubre con ternura los motivos que aún te sostienen.",
+        "message": "Volver a creer puede empezar al recordar lo que ya superaste, a alguien que te quiere o una pequeña esperanza que permanece. Deja que esos motivos lleguen sin compararte.",
+        "reflection": "Piensa en un tiempo difícil que ya atravesaste. ¿Qué te sostuvo entonces? Esa fuerza sigue contigo.",
+        "action": "Escribe tres motivos, por pequeños que sean, para seguir adelante.",
+        "tip": "La esperanza no es certeza sobre mañana, sino valor para dar otro paso.",
+        "prayer": "Dios de esperanza, renueva mi confianza en que mi camino tiene sentido. Recuérdame lo que has hecho y ayúdame a seguir en paz. Amén."
+      }
+    },
+    "after-a-rejection": {
+      "1": {
+        "title": "Acoger el dolor",
+        "summary": "Duele, y está bien sentirlo hoy.",
+        "message": "El rechazo duele y no tienes que ocultarlo. Antes de buscar respuestas, permítete sentir lo sucedido. El dolor acogido con cuidado se vuelve más ligero.",
+        "reflection": "¿En qué parte del cuerpo sientes este rechazo? Obsérvala sin juzgar y trátala con ternura.",
+        "action": "Escribe unas líneas sobre lo que sentiste, sin corregirte ni justificarte.",
+        "tip": "Sentir no es debilidad. Permite que el dolor pase sin quedarse atrapado.",
+        "prayer": "Señor, conoces mi dolor antes de que hable. Consuela mi corazón herido y ayúdame a vivir este día con ternura hacia mí misma. Amén."
+      },
+      "2": {
+        "title": "No eres el rechazo",
+        "summary": "El no de otra persona no te define.",
+        "message": "Un rechazo habla de una situación o de la decisión de alguien más. No mide tu valor. Tu dignidad existía antes de esa respuesta.",
+        "reflection": "¿Qué historia dura te cuentas a ti misma? Pregúntate si es un hecho o una conclusión apresurada y mírate como mirarías a una amiga.",
+        "action": "Cambia una frase dura sobre ti por otra que dirías a una amiga querida.",
+        "tip": "El no de alguien no es un veredicto sobre tu valor.",
+        "prayer": "Padre, recuérdame que soy amada. Sana las palabras que me hieren y afirma mi valor en tu gracia. Amén."
+      },
+      "3": {
+        "title": "Soltar la historia",
+        "summary": "Observa las historias que crea tu mente y devuélvelas a su tamaño real.",
+        "message": "Después de un rechazo, la mente repite conversaciones e imagina otros finales. Cuando vuelva a girar, regresa con suavidad a lo que sí está a tu alcance.",
+        "reflection": "¿Qué pregunta repites sin hallar respuesta? Soltar no es olvidar; es descansar de la necesidad de entenderlo todo.",
+        "action": "Cuando vuelva el pensamiento, respira y di: por ahora, lo dejo ir.",
+        "tip": "Puedes soltar una historia sin tener todas las respuestas.",
+        "prayer": "Señor, te entrego las preguntas que no puedo responder. Dame paz más allá de lo que entiendo y enséñame a descansar en ti. Amén."
+      },
+      "4": {
+        "title": "Cuidarte a ti misma",
+        "summary": "Hoy el centro eres tú: cuerpo, descanso y pequeños gestos de cariño.",
+        "message": "El rechazo puede volverte dura contigo misma. Cuida tu cuerpo como cuidarías a alguien que amas. Descansar y alimentarte te ayuda a levantarte de nuevo.",
+        "reflection": "¿Qué necesitas más: descanso, compañía, silencio o movimiento? Responde con sinceridad y sin culpa.",
+        "action": "Haz algo solo por placer hoy, aunque sea durante quince minutos.",
+        "tip": "Cuidarte no tiene que ser algo grande; basta con que sea auténtico.",
+        "prayer": "Dios, enséñame a cuidar el cuerpo y el alma que me diste. Ayúdame a descansar sin culpa y a recibir cariño. Amén."
+      },
+      "5": {
+        "title": "Recuperar tu voz",
+        "summary": "Recuerda lo que importa para ti y vuelve a decirlo en voz alta.",
+        "message": "El rechazo puede hacer que pidas menos y ocupes menos espacio. Recupera tu voz. Tus deseos y valores merecen ser expresados.",
+        "reflection": "¿Dónde has callado para evitar otra herida? Puedes ser cuidadosa sin esconderte.",
+        "action": "Dile a alguien, o a tu reflejo, algo que deseas.",
+        "tip": "Tu voz no necesita ser fuerte; solo necesita ser tuya.",
+        "prayer": "Señor, dame valor para ser yo misma y hablar con verdad y amabilidad. Recuérdame que me escuchas. Amén."
+      },
+      "6": {
+        "title": "Perdonar con límites",
+        "summary": "Perdonar libera tu corazón sin exponerte de nuevo al daño.",
+        "message": "Perdonar no exige olvidar ni volver a acercarte. Puedes soltar el resentimiento y mantener una distancia segura. Date el tiempo que necesites.",
+        "reflection": "¿Hay alguna herida que aún llevas contigo? El perdón puede comenzar con un pequeño deseo de liberarte de su peso.",
+        "action": "Escribe una frase de perdón que puedas decir con sinceridad hoy.",
+        "tip": "Perdonar es un regalo para ti, no una obligación de recuperar lo que fue.",
+        "prayer": "Padre, ayúdame a perdonar a mi ritmo y a mantener límites sabios. Sana mi corazón y llénalo de paz. Amén."
+      },
+      "7": {
+        "title": "Seguir con el corazón ligero",
+        "summary": "Mira atrás con gratitud y adelante con apertura.",
+        "message": "Has llegado al final de este camino. Tal vez el dolor siga ahí. Reconoce cómo te has cuidado y deja espacio para lo bueno que viene.",
+        "reflection": "¿Qué aprendiste sobre ti esta semana? Honra tu fuerza y tu sensibilidad y conserva lo que te hizo bien.",
+        "action": "Escribe algo que aprendiste sobre ti y algo que quieres llevar contigo.",
+        "tip": "Seguir adelante no borra el dolor; significa caminar con más cuidado.",
+        "prayer": "Señor, gracias por cada paso. Acoge lo que aún duele y guíame hacia adelante con un corazón más ligero. Amén."
+      }
+    },
+    "learning-to-set-boundaries": {
+      "1": {
+        "title": "Reconocer tus límites",
+        "summary": "Observa dónde dices sí cuando quisieras decir no.",
+        "message": "Los límites protegen tu tiempo, tu energía y tus valores. Hoy observa dónde te sientes incómoda o agotada, sin juzgarte.",
+        "reflection": "¿Cuándo dices sí por miedo a decepcionar? Tu incomodidad puede mostrarte que algo necesita atención.",
+        "action": "Di un pequeño no a algo que harías solo para agradar.",
+        "tip": "Poner límites te acerca a quien realmente eres.",
+        "prayer": "Señor, ayúdame a ver dónde necesito límites y dame valor para respetarlos con amabilidad. Amén."
+      },
+      "2": {
+        "title": "Decir no sin culpa",
+        "summary": "Un no claro y amable también es una forma de cuidar.",
+        "message": "Un no sincero es mejor que un sí lleno de resentimiento. No necesitas largas explicaciones. Puedes ser breve, amable y firme.",
+        "reflection": "¿Qué culpa aparece cuando piensas en rechazar algo? Sentir culpa no significa que estés haciendo algo malo.",
+        "action": "Practica esta frase: gracias por invitarme, pero hoy no puedo.",
+        "tip": "Un no breve y sincero vale más que un sí que te agota.",
+        "prayer": "Padre, libérame de necesitar la aprobación de todos. Ayúdame a hablar con amor y paz. Amén."
+      },
+      "3": {
+        "title": "Escuchar a tu cuerpo",
+        "summary": "Tu cuerpo avisa antes: aprende a escucharlo.",
+        "message": "La tensión, la respiración corta o el cansancio repentino pueden mostrar que cruzaste un límite. Presta atención hoy a esas señales.",
+        "reflection": "¿Cuándo se tensó o cansó tu cuerpo hoy? Escucharlo te ayuda a decidir con claridad lo que cabe en tu vida.",
+        "action": "Tres veces hoy, detente y pregúntale a tu cuerpo cómo se siente.",
+        "tip": "La incomodidad es información, no un defecto tuyo.",
+        "prayer": "Señor, formaste mi cuerpo y mi alma con cuidado. Ayúdame a notar sus señales y a respetar mi necesidad de descansar. Amén."
+      },
+      "4": {
+        "title": "Pedir lo que necesitas",
+        "summary": "Expresar con claridad lo que necesitas también es poner un límite.",
+        "message": "Los límites también pueden ser peticiones. Pedir ayuda, tiempo o respeto hace posible una relación más sincera.",
+        "reflection": "¿Qué esperas que otros noten sin decirlo? Hablar les da la oportunidad de comprenderte.",
+        "action": "Pide a alguien de confianza una pequeña cosa que necesitas.",
+        "tip": "Pedir con claridad es un gesto de confianza, no de debilidad.",
+        "prayer": "Dios, ayúdame a expresar mis necesidades sin miedo. Enséñame a recibir cuidado y construir relaciones sinceras. Amén."
+      },
+      "5": {
+        "title": "Lidiar con la reacción de otros",
+        "summary": "La reacción de otra persona no siempre significa que te equivocaste.",
+        "message": "Algunas personas pueden sorprenderse cuando empiezas a poner límites. Puedes escuchar sus sentimientos con respeto y mantener tu decisión.",
+        "reflection": "¿Qué reacción temes más? Imagínate respondiendo con calma, sin justificarte demasiado.",
+        "action": "Practica una respuesta tranquila por si alguien insiste.",
+        "tip": "Puedes comprender a la otra persona y seguir fiel a tu límite.",
+        "prayer": "Señor, dame serenidad cuando otros no acepten mis límites. Ayúdame a ser firme y amable. Amén."
+      },
+      "6": {
+        "title": "Límites y cariño",
+        "summary": "Los límites pueden proteger las relaciones en vez de alejarlas.",
+        "message": "Los límites honestos suelen hacer más ligeros los vínculos. Al respetarte, enseñas a otros a acercarse con cuidado.",
+        "reflection": "¿En qué relación te gustaría sentirte más tú misma? Un pequeño acuerdo puede abrir espacio para la cercanía y el respeto.",
+        "action": "Elige una relación y acuerda algo pequeño que la proteja.",
+        "tip": "Un vínculo sano tiene espacio para ti entera y para lo que necesitas.",
+        "prayer": "Padre, bendice a quienes caminan conmigo. Ayúdame a amar sin perderme y a construir respeto con mis límites. Amén."
+      },
+      "7": {
+        "title": "Mantener tus límites",
+        "summary": "Los límites se practican cada día, y cada intento es un avance.",
+        "message": "Algunos días mantendrás un límite y otros tendrás que intentarlo de nuevo. Ambas cosas son parte del aprendizaje. Vuelve a ti sin dureza.",
+        "reflection": "¿Qué límite te ha ayudado más? ¿Cómo puedes recordarlo cuando vuelva a ser difícil?",
+        "action": "Escribe un límite que quieres mantener y cómo vas a recordarlo.",
+        "tip": "Volver a empezar también cuenta; lo importante es regresar a ti.",
+        "prayer": "Señor, dame paciencia mientras aprendo. Ayúdame a empezar de nuevo y a confiar en cada paso sincero. Amén."
+      }
+    },
+    "when-your-faith-is-tired": {
+      "1": {
+        "title": "El cansancio también puede ser oración",
+        "summary": "Puedes acercarte a Dios tal como estás.",
+        "message": "No necesitas palabras perfectas ni una fe fuerte para orar. Trae tu cansancio con sinceridad y deja que eso baste por hoy.",
+        "reflection": "¿Qué le dirías a Dios si no tuvieras que parecer fuerte? Permite que tus palabras reales sean tu oración.",
+        "action": "Quédate un minuto en silencio y dile a Dios, con tus palabras, cómo estás.",
+        "tip": "La sinceridad cansada vale más que fingir que todo está bien.",
+        "prayer": "Dios, aquí estoy, cansada y sincera. Encuéntrame donde estoy y enséñame a descansar en tu presencia. Amén."
+      },
+      "2": {
+        "title": "Cuando Dios parece callar",
+        "summary": "El silencio no significa ausencia.",
+        "message": "La espera puede hacer que Dios parezca lejano. Puedes nombrar esa sensación. Incluso en silencio, no estás abandonada.",
+        "reflection": "¿Qué respuesta desearías recibir hoy? Lleva ese anhelo a la oración sin intentar resolverlo de inmediato.",
+        "action": "Lee despacio el Salmo 13 y hazlo tu oración de hoy.",
+        "tip": "Esperar también puede ser una forma de confiar, aunque sea difícil.",
+        "prayer": "Señor, cuando no pueda oírte, mantenme cerca. Dame paciencia y esperanza mientras espero. Amén."
+      },
+      "3": {
+        "title": "Las dudas no alejan a Dios",
+        "summary": "Preguntar y dudar también puede ser parte de una fe viva.",
+        "message": "La fe no exige esconder las preguntas. Ponerlas a la luz puede profundizar la sinceridad y la confianza.",
+        "reflection": "¿Qué pregunta te ha dado miedo expresar? Puedes presentarla a Dios sin necesitar una respuesta inmediata.",
+        "action": "Escribe una duda y preséntasela a Dios en oración.",
+        "tip": "Una fe madura convive con preguntas y sigue caminando.",
+        "prayer": "Dios, recibe mis preguntas sin juzgarme. Dame valor para seguir buscándote. Amén."
+      },
+      "4": {
+        "title": "Pequeñas señales de cuidado",
+        "summary": "Busca señales discretas del cuidado de Dios en tu día.",
+        "message": "El cuidado no siempre es espectacular. Una palabra amable, un momento de descanso o una pequeña ayuda pueden recordarte que eres vista.",
+        "reflection": "¿Qué gesto amable notaste hoy? Permítete recibirlo con gratitud.",
+        "action": "Anota tres señales de cuidado que viste hoy, por pequeñas que sean.",
+        "tip": "La gratitud entrena la mirada para ver lo que ya está ahí.",
+        "prayer": "Señor, abre mis ojos a tu cuidado silencioso. Ayúdame a recibirlo y compartirlo. Amén."
+      },
+      "5": {
+        "title": "Empezar de nuevo con sencillez",
+        "summary": "Vuelve poco a poco a la fe, sin presión.",
+        "message": "No tienes que recuperarlo todo de una vez. Un gesto sencillo cada día puede abrir espacio para que la fe crezca de nuevo.",
+        "reflection": "¿Qué práctica pequeña parece posible ahora: una oración, un versículo o un momento de silencio? Elige sin compararte.",
+        "action": "Elige un gesto sencillo de fe y decide cuándo lo harás mañana.",
+        "tip": "La fe se renueva con pequeños gestos repetidos con cariño.",
+        "prayer": "Dios, ayúdame a empezar de nuevo a mi ritmo. Encuéntrame en los pequeños momentos de fe. Amén."
+      }
+    },
+    "finding-direction-again": {
+      "1": {
+        "title": "Detenerte para escuchar",
+        "summary": "Antes de decidir, baja el ritmo y haz espacio para escuchar.",
+        "message": "Cuando te sientes perdida, haz una pausa antes de perseguir una respuesta. El silencio puede ayudarte a oír lo importante bajo el ruido.",
+        "reflection": "¿Qué aparece cuando dejas de llenar cada instante? Obsérvalo sin prisa por darle un significado.",
+        "action": "Dedica diez minutos sin pantallas a observar lo que llega a tu mente.",
+        "tip": "La claridad suele llegar cuando dejamos de perseguirla.",
+        "prayer": "Señor, calma mi mente y ayúdame a escuchar antes de moverme. Muéstrame lo importante. Amén."
+      },
+      "2": {
+        "title": "Lo que de verdad importa",
+        "summary": "Recuerda los valores que deben guiar tus decisiones.",
+        "message": "No todo lo urgente es importante. Deja que tus valores te ayuden a reconocer qué camino merece tu energía.",
+        "reflection": "¿Qué valores quieres que refleje tu próxima elección? Nómbralos con tus propias palabras.",
+        "action": "Escribe tres cosas que de verdad importan para ti hoy.",
+        "tip": "Conocer tus valores te ayuda a encontrar el rumbo.",
+        "prayer": "Dios, recuérdame lo que más importa y dame valor para elegir de acuerdo con ello. Amén."
+      },
+      "3": {
+        "title": "Soltar lo que no es tuyo",
+        "summary": "Deja ir expectativas y cargas que no te pertenecen.",
+        "message": "Las expectativas de otros pueden pesar tanto que pierdes de vista tu camino. Puedes dejar lo que nunca fue tuyo cargar.",
+        "reflection": "¿Qué expectativa ajena ha guiado tus pasos más que tus propios valores? ¿Qué cambiaría si la soltaras?",
+        "action": "Nombra una expectativa ajena que decides dejar de cargar.",
+        "tip": "Soltar un peso prestado libera tus manos para lo que sí es tuyo.",
+        "prayer": "Señor, ayúdame a reconocer lo que me corresponde y a soltar lo que no. Dame libertad para seguir tu guía. Amén."
+      },
+      "4": {
+        "title": "Pedir sabiduría",
+        "summary": "Pide discernimiento y confía en que llegará a su tiempo.",
+        "message": "No necesitas saberlo todo antes de pedir ayuda. Presenta una decisión a Dios y date espacio para escuchar.",
+        "reflection": "¿Qué elección necesita sabiduría hoy? Observa qué trae paz y qué todavía necesita tiempo.",
+        "action": "Ora pidiendo sabiduría sobre una decisión y anota lo que percibas después.",
+        "tip": "La sabiduría llega a quien la pide y está dispuesto a escuchar.",
+        "prayer": "Dios, dame sabiduría y paciencia. Ayúdame a reconocer el próximo paso fiel. Amén."
+      },
+      "5": {
+        "title": "Elegir un paso",
+        "summary": "No tienes que ver todo el camino: elige el siguiente paso posible.",
+        "message": "Esperar una certeza total puede dejarte inmóvil. Una acción pensada puede mostrarte más que otro día de preocupación.",
+        "reflection": "¿Qué pequeño paso está a tu alcance ahora? Puede ser sencillo y aun así importante.",
+        "action": "Elige un paso para los próximos tres días y decide cuándo lo darás.",
+        "tip": "Dar el siguiente paso suele aclarar el camino.",
+        "prayer": "Señor, dame valor para el paso que puedo ver y confianza para lo que aún no veo. Amén."
+      },
+      "6": {
+        "title": "Pedir consejo",
+        "summary": "No tienes que decidir sola: busca a quien te ayude a ver.",
+        "message": "Alguien de confianza puede ofrecer otra perspectiva sin decidir por ti. Acércate y permite que te acompañen.",
+        "reflection": "¿Quién sabe escuchar y respeta tu libertad? Piensa qué te gustaría preguntarle.",
+        "action": "Escribe a alguien de confianza y pídele una conversación.",
+        "tip": "Un buen consejo amplía tu mirada, pero la decisión sigue siendo tuya.",
+        "prayer": "Dios, rodéame de personas sabias y ayúdame a escuchar sin perder mi propia voz. Amén."
+      },
+      "7": {
+        "title": "Caminar con confianza",
+        "summary": "Sigue sabiendo que no estás sola en el camino.",
+        "message": "Encontrar el rumbo es un viaje, no una elección perfecta. Sigue caminando, ajusta cuando sea necesario y confía en que Dios va contigo.",
+        "reflection": "¿Qué aprendiste esta semana sobre tu dirección? Deja que eso guíe tu próximo paso.",
+        "action": "Escribe una frase que resuma el rumbo que quieres seguir ahora.",
+        "tip": "El rumbo es un viaje: ajusta la ruta sin perder la esperanza.",
+        "prayer": "Señor, camina conmigo. Dame confianza, humildad y esperanza para el camino que viene. Amén."
+      }
+    }
+  },
+  "verses": {
+    "0": {
+      "text": "Porque yo conozco los planes que tengo para ustedes, dice el Señor: planes de bienestar y no de daño…",
+      "reference": "Jeremías 29:11"
+    },
+    "1": {
+      "text": "No temas, porque estoy contigo; no te angusties, porque yo soy tu Dios.",
+      "reference": "Isaías 41:10"
+    },
+    "2": {
+      "text": "El Señor está cerca de quienes tienen el corazón quebrantado y salva a los de espíritu abatido.",
+      "reference": "Salmo 34:18"
+    },
+    "3": {
+      "text": "Vengan a mí todos los que están cansados y cargados, y yo les daré descanso.",
+      "reference": "Mateo 11:28"
+    },
+    "4": {
+      "text": "Dios es nuestro refugio y fortaleza, una ayuda siempre presente en la adversidad.",
+      "reference": "Salmo 46:1"
+    },
+    "5": { "text": "El Señor es mi pastor; nada me faltará.", "reference": "Salmo 23:1" },
+    "6": {
+      "text": "Confía en el Señor de todo corazón y no te apoyes en tu propio entendimiento.",
+      "reference": "Proverbios 3:5"
+    },
+    "7": {
+      "text": "Sé fuerte y valiente. No temas ni te desanimes, porque el Señor tu Dios estará contigo dondequiera que vayas.",
+      "reference": "Josué 1:9"
+    },
+    "8": {
+      "text": "Mi ayuda viene del Señor, creador de los cielos y de la tierra.",
+      "reference": "Salmo 121:2"
+    },
+    "9": {
+      "text": "Depositen en él todas sus preocupaciones, porque él cuida de ustedes.",
+      "reference": "1 Pedro 5:7"
+    },
+    "10": {
+      "text": "Que el Dios de la esperanza los llene de alegría y paz al confiar en él, para que rebosen de esperanza por el Espíritu Santo.",
+      "reference": "Romanos 15:13"
+    },
+    "11": {
+      "text": "Por el gran amor del Señor no somos consumidos; su misericordia no se agota.",
+      "reference": "Lamentaciones 3:22"
+    },
+    "12": {
+      "text": "Entrega tus cargas al Señor y él te sostendrá; no dejará caer a quien confía en él.",
+      "reference": "Salmo 55:22"
+    },
+    "13": {
+      "text": "Quienes esperan en el Señor renovarán sus fuerzas. Volarán como águilas, correrán sin agotarse y caminarán sin cansarse.",
+      "reference": "Isaías 40:31"
+    }
+  },
+  "conversation": {
+    "duration": {
+      "oneMinute": "{{minutes}} minuto",
+      "minutes": "{{minutes}} minutos",
+      "minutesAndSeconds": "{{minutes}} min {{seconds}} s"
+    },
+    "names": {
+      "discouragementPlan": "Cuando pesa el desánimo",
+      "directionPlan": "Volver a encontrar el rumbo"
+    },
+    "replies": {
+      "crisis": "Siento mucho que estés pasando por esto y agradezco que me lo hayas contado. No estás sola y tu vida importa. Habla ahora con alguien que pueda escucharte. Si estás en Brasil, llama al CVV al 188, gratis y disponible las 24 horas. Si hay peligro inmediato, llama a los servicios de emergencia locales o al SAMU al 192 en Brasil. Si puedes, pide a alguien de confianza que se quede contigo.",
+      "talk": "Estoy aquí para escucharte, a tu ritmo. Cuéntame qué te pesa o qué te ha traído alegría hoy.",
+      "directionWithPlan": "¿Qué te parece continuar donde lo dejaste? Estás en el día {{nextDay}} de «{{planTitle}}». Vuelve a la pestaña Planes, un paso a la vez.",
+      "directionWithoutPlan": "Cuando no ves el rumbo, un buen comienzo es elegir un plan y dar el primer paso. Prueba «{{planTitle}}» en la pestaña Planes.",
+      "practiceWithCheckIn": "Para hoy elegí la práctica «{{practiceTitle}}», de {{practiceDuration}}. La encontrarás en la tarjeta de tu clave del día, en Inicio.",
+      "practiceWithoutCheckIn": "Una práctica funciona mejor cuando se adapta a tu momento. Haz el registro de hoy en Inicio y te mostraré tu práctica del día.",
+      "prayer": "«{{verseText}}» ({{verseReference}}, versión libre). ¿Te gustaría quedarte un minuto en silencio con estas palabras? Respira despacio.",
+      "breathingIntro": "Cuando aparece la ansiedad, tu cuerpo puede necesitar una pausa.",
+      "discouragement": "El cansancio y el desánimo también merecen cuidado. El plan «{{planTitle}}» en Planes ofrece pequeños pasos para los días difíciles.",
+      "faith": "Me alegra que quieras acercarte a esto. Un versículo para este momento: «{{verseText}}» ({{verseReference}}, versión libre). Quédate un instante con él."
+    },
+    "defaults": [
+      "Gracias por compartirlo conmigo. ¿Quieres contarme un poco más sobre tu día?",
+      "Te escucho. Lo que sientes importa y no tienes que encontrar las palabras enseguida.",
+      "Estoy aquí contigo. Si quieres, cuéntame lo primero que te vino a la mente.",
+      "Gracias por confiar en mí. ¿Qué es lo que más te pesa ahora?",
+      "Tiene sentido sentirte así. Respira y continúa cuando quieras; te sigo escuchando."
+    ]
+  }
+}

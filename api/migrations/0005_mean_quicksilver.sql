@@ -1,0 +1,1 @@
+ALTER TABLE `conversation_messages` ADD `language` text DEFAULT 'pt-BR' NOT NULL;

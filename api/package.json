@@ -1,0 +1,42 @@
+{
+  "name": "@clavis-via/api",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./router": {
+      "types": "./src/routes/app.route.ts"
+    }
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "dev": "wrangler dev --ip 0.0.0.0 --port 8787",
+    "deploy": "wrangler d1 migrations apply DB --remote && wrangler deploy --minify",
+    "deploy:staging": "wrangler d1 migrations apply DB --remote --env staging && wrangler deploy --env staging --minify",
+    "cf-typegen": "wrangler types --strict-vars=false",
+    "typecheck": "wrangler types --strict-vars=false --check && tsc -b && tsc -p tsconfig.test.json",
+    "database:generate": "drizzle-kit generate",
+    "database:migrate:remote": "wrangler d1 migrations apply DB --remote",
+    "database:migrate:staging": "wrangler d1 migrations apply DB --remote --env staging",
+    "database:migrate:local": "wrangler d1 migrations apply DB --local",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@clerk/backend": "3.25.0",
+    "@hono/trpc-server": "0.4.2",
+    "@trpc/server": "11.19.0",
+    "drizzle-orm": "0.45.4",
+    "hono": "4.13.13",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "1.4.5",
+    "@types/node": "26.6.5",
+    "@vitest/coverage-istanbul": "5.0.5",
+    "drizzle-kit": "0.31.11",
+    "jose": "6.2.12",
+    "typescript": "6.0.3",
+    "vitest": "5.0.5",
+    "wrangler": "4.151.2"
+  }
+}

@@ -1,0 +1,21 @@
+appId: com.celsodias.clavisvia
+---
+- runFlow: subflows/launch-fresh.yaml
+- tapOn:
+    id: welcome-start
+- tapOn:
+    id: sign-up-first-name
+- inputText: Teste
+- tapOn:
+    id: sign-up-email
+- inputText: ${SIGN_UP_EMAIL}
+- tapOn:
+    id: sign-up-password
+- inputText: ${SIGN_UP_PASSWORD}
+- hideKeyboard
+- tapOn:
+    id: authentication-submit
+- extendedWaitUntil:
+    visible:
+      id: check-in-submit
+    timeout: 30000

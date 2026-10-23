@@ -1,0 +1,23 @@
+**/.env*
+**/.dev.vars*
+**/.wrangler/**
+**/node_modules/**
+**/dist/**
+**/coverage/**
+**/test-results/**
+**/.DS_Store
+**/android/**
+**/ios/**
+**/.expo/**
+**/build/**
+
+# Keep workspace manifests so frozen pnpm installs can resolve all importers.
+infra/**
+!infra/package.json
+mobile/**
+!mobile/package.json
+
+# The project build needs the API TypeScript project and web tests referenced by tsconfig.
+docs/**
+example/**
+.superpowers/**

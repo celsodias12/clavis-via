@@ -1,0 +1,450 @@
+{
+  "practices": {
+    "guided-breathing": {
+      "title": "Guided breathing",
+      "description": "Pause to calm your mind, connect with your body, and return to the present."
+    },
+    "body-release": {
+      "title": "Release tension",
+      "description": "Notice your body from face to feet and gently release the tension you find."
+    },
+    "small-steps": {
+      "title": "One possible step",
+      "description": "Choose one small action for today and calmly picture each step toward completing it."
+    },
+    "pause-before-reacting": {
+      "title": "Pause before reacting",
+      "description": "Breathe slowly, name what you feel, and let the intensity ease before deciding what to do."
+    },
+    "gentle-welcome": {
+      "title": "Welcome your feelings",
+      "description": "Notice your emotion without trying to change it, and speak to yourself as you would to a friend."
+    },
+    "quiet-gratitude": {
+      "title": "Quiet gratitude",
+      "description": "Think of three simple things that are going well today and spend a moment with each one."
+    },
+    "daily-intention": {
+      "title": "Today's intention",
+      "description": "Decide how you want to feel today and choose one action that brings you closer."
+    },
+    "inner-listening": {
+      "title": "Listen within",
+      "description": "Sit quietly and notice what needs room inside you, without rushing to name it."
+    }
+  },
+  "dailyKeys": {
+    "heavy": {
+      "title": "One step at a time",
+      "text": "You do not have to do everything today. Choose one small thing and allow yourself to rest afterward."
+    },
+    "anxious": {
+      "title": "Voice and boundaries",
+      "text": "Perhaps you do not need to explain so much today. Start by noticing what is true for you."
+    },
+    "discouraged": {
+      "title": "Small new beginnings",
+      "text": "Discouragement passes, too. One small action today shows that you are still moving forward."
+    },
+    "irritated": {
+      "title": "Before you answer",
+      "text": "Feeling irritated is human. You can give yourself time before you respond."
+    },
+    "sensitive": {
+      "title": "Be gentle with yourself",
+      "text": "Sensitivity is not weakness. Treat yourself with the same kindness you offer others."
+    },
+    "at-peace": {
+      "title": "Hold on to calm",
+      "text": "It is good to feel at peace. Notice what brought you here and carry it through the day."
+    },
+    "hopeful": {
+      "title": "Make room for the new",
+      "text": "Hope is a good place to begin. Give it one concrete action today."
+    },
+    "other": {
+      "title": "Your own way",
+      "text": "What you feel deserves space, even without a name. Begin by listening to what is true now."
+    }
+  },
+  "plans": {
+    "when-discouragement-weighs": {
+      "title": "When discouragement weighs on you",
+      "description": "A short plan to help you breathe, sort through your thoughts, and find small reasons to keep going."
+    },
+    "after-a-rejection": {
+      "title": "After rejection",
+      "description": "Seven days to tend to the pain of rejection, remember your worth, and move forward with peace."
+    },
+    "learning-to-set-boundaries": {
+      "title": "Learning to set boundaries",
+      "description": "Seven days to recognize your limits, say no with kindness, and reconnect with who you are."
+    },
+    "when-your-faith-is-tired": {
+      "title": "When your faith feels tired",
+      "description": "Five days to acknowledge waiting and doubt and rediscover God's presence in daily life."
+    },
+    "finding-direction-again": {
+      "title": "Finding direction again",
+      "description": "Seven days to quiet your mind, listen to what matters, and take your next step with clarity."
+    }
+  },
+  "days": {
+    "when-discouragement-weighs": {
+      "1": {
+        "title": "Breathe and acknowledge",
+        "summary": "Pause and acknowledge how you really feel today.",
+        "message": "Before asking yourself to be strong, take a breath. Not every day needs to be productive. Today, simply notice how you are and allow a new beginning.",
+        "reflection": "What is your body trying to tell you right now? Naming tiredness or sadness is a first step toward caring for yourself honestly.",
+        "action": "Take five deep breaths, counting to four as you breathe in and out.",
+        "tip": "Acknowledging your feelings does not mean you must solve everything now.",
+        "prayer": "Lord, I come tired and honest. Calm my heart, help me breathe, and remind me I do not have to carry everything alone. Amen."
+      },
+      "2": {
+        "title": "Small movements",
+        "summary": "When the whole feels too big, begin with one small action.",
+        "message": "Discouragement can make everything seem enormous. You do not need to solve the whole week. Choose one possible step and let it be enough for today.",
+        "reflection": "What is the smallest thing you could do today that would still be progress? Even opening a window or answering a message counts.",
+        "action": "Choose a five-minute task and do just that, without demanding more.",
+        "tip": "Small steps go far when you keep taking them.",
+        "prayer": "Father, my strength feels small, but I want to continue. Teach me to take one step at a time and trust that you are with me. Amen."
+      },
+      "3": {
+        "title": "Believe again",
+        "summary": "Gently rediscover the reasons that still support you.",
+        "message": "Believing again begins with a memory of what you have survived, someone who cares, or a small hope that remains. Let those reasons come without comparison.",
+        "reflection": "Think of a hard season you have already lived through. What helped you then? That strength has not left you.",
+        "action": "Write down three reasons, however small, to keep going.",
+        "tip": "Hope is the courage to take another step, not certainty about tomorrow.",
+        "prayer": "God of hope, renew my trust that my path has meaning. Remind me of what you have done and help me move forward in peace. Amen."
+      }
+    },
+    "after-a-rejection": {
+      "1": {
+        "title": "Welcome the pain",
+        "summary": "It hurts, and it is okay to feel that today.",
+        "message": "Rejection hurts; you do not have to hide it. Before looking for answers, allow yourself to feel what happened. Pain held with care becomes lighter.",
+        "reflection": "Where do you feel this rejection in your body? Notice it without judgment, and give that place some kindness.",
+        "action": "Write a few lines about what you felt, without editing or justifying it.",
+        "tip": "Feeling is not weakness. It lets pain move through rather than stay trapped.",
+        "prayer": "Lord, you know my pain before I speak. Comfort my wounded heart and help me meet this day with tenderness toward myself. Amen."
+      },
+      "2": {
+        "title": "You are not the rejection",
+        "summary": "Someone else's no does not define you.",
+        "message": "A rejection reflects a situation or another person's choice. It does not measure your worth. Your value existed before that answer.",
+        "reflection": "What harsh story are you telling yourself? Ask whether it is a fact or a quick conclusion, and offer yourself the fairness you would offer a friend.",
+        "action": "Replace one harsh sentence about yourself with something you would say to a dear friend.",
+        "tip": "Someone else's no is not a verdict on your worth.",
+        "prayer": "Father, remind me that I am loved. Heal the hurtful words I carry and ground my worth in your grace. Amen."
+      },
+      "3": {
+        "title": "Let go of the story",
+        "summary": "Notice the stories your mind creates and bring them back to size.",
+        "message": "After rejection, the mind replays conversations and imagines different endings. When it circles back, gently return to what is within your reach.",
+        "reflection": "Which question have you repeated without finding an answer? Letting go does not mean forgetting; it means resting from the need to understand everything.",
+        "action": "When the thought returns, breathe and say: for now, I let it go.",
+        "tip": "You can release a story without having every answer.",
+        "prayer": "Lord, I give you the questions I cannot answer. Give me peace beyond understanding and help me rest in your care. Amen."
+      },
+      "4": {
+        "title": "Care for yourself",
+        "summary": "Today, focus on your body, rest, and simple kindness.",
+        "message": "Rejection can make you hard on yourself. Care for your body as you would care for someone you love. Rest and nourishment help you rise again.",
+        "reflection": "What do you need most: rest, company, quiet, or movement? Answer honestly and without guilt.",
+        "action": "Do something just for pleasure today, even for fifteen minutes.",
+        "tip": "Self-care does not have to be big; it only has to be real.",
+        "prayer": "God, teach me to care for the body and soul you gave me. Help me rest without guilt and receive kindness. Amen."
+      },
+      "5": {
+        "title": "Find your voice again",
+        "summary": "Remember what matters to you and say it aloud again.",
+        "message": "Rejection may tempt you to ask for less and take up less space. Reclaim your voice. Your wishes and values deserve to be spoken.",
+        "reflection": "Where have you stayed quiet to avoid another hurt? You can be careful without hiding yourself.",
+        "action": "Tell someone, or your reflection, one thing you want.",
+        "tip": "Your voice does not need to be loud; it only needs to be yours.",
+        "prayer": "Lord, give me courage to be myself and speak with honesty and kindness. Remind me that you hear me. Amen."
+      },
+      "6": {
+        "title": "Forgive with boundaries",
+        "summary": "Forgiving frees your heart without exposing you to harm again.",
+        "message": "Forgiveness does not require forgetting or renewed closeness. You can release resentment and still keep a safe distance. Take the time you need.",
+        "reflection": "Is there a hurt you still carry? Forgiveness can begin with a small wish to be free from its weight.",
+        "action": "Write one sentence of forgiveness that you can honestly say today.",
+        "tip": "Forgiveness is a gift to yourself, not a demand to restore what was.",
+        "prayer": "Father, help me forgive at my own pace while keeping wise boundaries. Heal my heart and fill it with peace. Amen."
+      },
+      "7": {
+        "title": "Move on with a lighter heart",
+        "summary": "Look back with gratitude and ahead with openness.",
+        "message": "You have reached the end of this journey. The pain may still be present. Notice how you have cared for yourself, and make room for good things ahead.",
+        "reflection": "What have you learned about yourself this week? Honor your strength and sensitivity, and carry forward what helped.",
+        "action": "Write one thing you learned about yourself and one thing you want to carry forward.",
+        "tip": "Moving on does not erase the pain; it means walking with more care.",
+        "prayer": "Lord, thank you for every step. Hold what still hurts and guide me forward with a lighter heart. Amen."
+      }
+    },
+    "learning-to-set-boundaries": {
+      "1": {
+        "title": "Recognize your limits",
+        "summary": "Notice where you say yes when you want to say no.",
+        "message": "Boundaries protect your time, energy, and values. Today, notice where you feel uncomfortable or drained, without judging yourself.",
+        "reflection": "When do you say yes out of fear of disappointing someone? Your discomfort may be telling you that something needs care.",
+        "action": "Say a small no to something you would only do to please others.",
+        "tip": "Boundaries bring you closer to who you are.",
+        "prayer": "Lord, help me see where I need boundaries and give me courage to honor them with kindness. Amen."
+      },
+      "2": {
+        "title": "Say no without guilt",
+        "summary": "A clear and gentle no is also a form of care.",
+        "message": "An honest no is kinder than a resentful yes. You do not need a long explanation. You can be brief, warm, and firm.",
+        "reflection": "What guilt appears when you consider declining? Feeling guilty does not mean you are doing something wrong.",
+        "action": "Practice saying: thank you for inviting me, but I cannot today.",
+        "tip": "A short, sincere no is better than an exhausting yes.",
+        "prayer": "Father, free me from needing everyone's approval. Help me speak the truth with love and peace. Amen."
+      },
+      "3": {
+        "title": "Listen to your body",
+        "summary": "Your body speaks early; learn to hear it.",
+        "message": "Tightness, shallow breathing, and sudden tiredness can show where a boundary has been crossed. Pay attention to those signals today.",
+        "reflection": "When did your body tense or tire today? Listening to it helps you decide more clearly what belongs in your life.",
+        "action": "Three times today, pause and ask your body how it feels.",
+        "tip": "Discomfort is information, not a flaw in you.",
+        "prayer": "Lord, you made my body and soul with care. Help me notice their signals and respect my need for rest. Amen."
+      },
+      "4": {
+        "title": "Ask for what you need",
+        "summary": "Clearly saying what you need is a boundary, too.",
+        "message": "Boundaries can be requests as well as refusals. Asking for help, time, or respect makes honest connection possible.",
+        "reflection": "What are you hoping others will notice without being told? Speaking up gives them a chance to understand you.",
+        "action": "Ask someone you trust for one small thing you need.",
+        "tip": "Asking clearly is an act of trust, not weakness.",
+        "prayer": "God, help me express my needs without fear. Teach me to receive care and build honest relationships. Amen."
+      },
+      "5": {
+        "title": "Handle others' reactions",
+        "summary": "Someone else's reaction does not always mean you were wrong.",
+        "message": "People may be surprised when you start setting limits. You can hear their feelings respectfully and still keep your decision.",
+        "reflection": "Which reaction do you fear most? Imagine answering calmly without defending yourself too much.",
+        "action": "Practice a calm response in case someone insists.",
+        "tip": "You can care about someone else and stay true to your boundary.",
+        "prayer": "Lord, give me calm when others dislike my limits. Keep me both firm and gentle. Amen."
+      },
+      "6": {
+        "title": "Boundaries and affection",
+        "summary": "Boundaries can protect relationships instead of pushing people away.",
+        "message": "Honest limits often make relationships lighter. When you respect yourself, others learn how to meet you with care.",
+        "reflection": "In which relationship would you like to feel more fully yourself? A small agreement could make room for both closeness and respect.",
+        "action": "Choose one relationship and make a small agreement that protects it.",
+        "tip": "A healthy bond has room for all of you and what you need.",
+        "prayer": "Father, bless those who walk with me. Help me love without losing myself, and let my boundaries build respect. Amen."
+      },
+      "7": {
+        "title": "Keep your boundaries",
+        "summary": "Boundaries take daily practice, and each attempt is progress.",
+        "message": "Some days you will hold a boundary and others you will need to try again. Both are part of learning. Return to yourself without harshness.",
+        "reflection": "Which boundary has helped you most? How can you remember it when things become difficult again?",
+        "action": "Write down one boundary you want to keep and how you will remember it.",
+        "tip": "Starting again is part of the journey; what matters is returning to yourself.",
+        "prayer": "Lord, give me patience as I learn. Help me begin again and trust that every honest step matters. Amen."
+      }
+    },
+    "when-your-faith-is-tired": {
+      "1": {
+        "title": "Weariness can be a prayer",
+        "summary": "You can come to God exactly as you are.",
+        "message": "You do not need perfect words or strong faith to pray. Bring your tiredness honestly, and let it be enough for today.",
+        "reflection": "What would you tell God if you did not have to sound strong? Let your real words be your prayer.",
+        "action": "Sit quietly for a minute and tell God, in your own words, how you feel.",
+        "tip": "Honest weariness matters more than pretending to be fine.",
+        "prayer": "God, here I am, tired and honest. Meet me where I am and teach me to rest in your presence. Amen."
+      },
+      "2": {
+        "title": "When God seems silent",
+        "summary": "Silence does not mean absence.",
+        "message": "Waiting can make God feel far away. You are allowed to name that feeling. Even in silence, you are not abandoned.",
+        "reflection": "What do you wish God would answer today? Bring that longing into prayer without trying to fix it.",
+        "action": "Read Psalm 13 slowly and make it your prayer today.",
+        "tip": "Waiting can also be a way of trusting, even when it is hard.",
+        "prayer": "Lord, when I cannot hear you, hold me close. Give me patience and hope while I wait. Amen."
+      },
+      "3": {
+        "title": "Doubts do not drive God away",
+        "summary": "Questions and doubt can be part of living faith.",
+        "message": "Faith does not require hiding your questions. Bringing them into the light can deepen honesty and trust.",
+        "reflection": "Which question have you been afraid to say aloud? You can hold it before God without needing an immediate answer.",
+        "action": "Write down one doubt and offer it to God in prayer.",
+        "tip": "Mature faith can live with questions and keep walking.",
+        "prayer": "God, receive my questions without judgment. Give me courage to keep seeking you. Amen."
+      },
+      "4": {
+        "title": "Small signs of care",
+        "summary": "Look for quiet signs of God's care in your day.",
+        "message": "Care is not always dramatic. A kind word, a moment of rest, or a small provision can remind you that you are seen.",
+        "reflection": "What small kindness did you notice today? Allow yourself to receive it with gratitude.",
+        "action": "Write down three signs of care you noticed today, however small.",
+        "tip": "Gratitude trains your eyes to see what is already there.",
+        "prayer": "Lord, open my eyes to your quiet care. Help me receive it and share it with others. Amen."
+      },
+      "5": {
+        "title": "Begin again simply",
+        "summary": "Return to faith little by little, without pressure.",
+        "message": "You do not have to recover everything at once. A simple daily gesture can make room for faith to grow again.",
+        "reflection": "What small practice feels possible now: a prayer, a verse, or a moment of silence? Choose without comparing yourself.",
+        "action": "Choose one simple act of faith and decide when you will do it tomorrow.",
+        "tip": "Faith is renewed through small acts repeated with care.",
+        "prayer": "God, help me begin again in my own time. Meet me in small faithful moments. Amen."
+      }
+    },
+    "finding-direction-again": {
+      "1": {
+        "title": "Stop and listen",
+        "summary": "Slow down and make room to listen before deciding.",
+        "message": "When you feel lost, pause before chasing an answer. Quiet can help you hear what matters beneath the noise.",
+        "reflection": "What comes up when you stop filling every moment? Notice it without rushing to decide what it means.",
+        "action": "Spend ten minutes without screens and notice what comes to mind.",
+        "tip": "Clarity often arrives when we stop running after it.",
+        "prayer": "Lord, quiet my mind and help me listen before I move. Show me what matters. Amen."
+      },
+      "2": {
+        "title": "What really matters",
+        "summary": "Remember the values that should guide your choices.",
+        "message": "Not every urgent thing is important. Let your values help you recognize which direction deserves your energy.",
+        "reflection": "Which values do you want your next choice to reflect? Name them in your own words.",
+        "action": "Write down three things that truly matter to you today.",
+        "tip": "Knowing your values makes it easier to find your way.",
+        "prayer": "God, remind me of what matters most and give me courage to choose accordingly. Amen."
+      },
+      "3": {
+        "title": "Release what is not yours",
+        "summary": "Let go of expectations and burdens that do not belong to you.",
+        "message": "Other people's expectations can become so heavy that you lose sight of your own path. You may set down what was never yours to carry.",
+        "reflection": "Whose expectation has been guiding you more than your own values? What would change if you released it?",
+        "action": "Name one expectation from someone else that you choose to stop carrying.",
+        "tip": "Setting down a borrowed weight frees your hands for what is yours.",
+        "prayer": "Lord, help me recognize what belongs to me and release what does not. Give me freedom to follow your guidance. Amen."
+      },
+      "4": {
+        "title": "Ask for wisdom",
+        "summary": "Ask for discernment and trust that it will come in time.",
+        "message": "You do not need to know everything before asking for help. Bring one decision to God and give yourself room to listen.",
+        "reflection": "What choice needs wisdom today? Notice what brings peace and what still needs time.",
+        "action": "Pray for wisdom about one decision, then write down what you notice.",
+        "tip": "Wisdom comes to those who ask and are willing to listen.",
+        "prayer": "God, grant me wisdom and patience. Help me recognize the next faithful step. Amen."
+      },
+      "5": {
+        "title": "Choose one step",
+        "summary": "You do not need to see the whole path; choose the next possible step.",
+        "message": "Waiting for complete certainty can keep you still. One thoughtful action may reveal more than another day of worry.",
+        "reflection": "What small step is within your reach now? It can be simple and still matter.",
+        "action": "Choose one step for the next three days and decide when you will take it.",
+        "tip": "Taking the next step often makes the path clearer.",
+        "prayer": "Lord, give me courage for the step I can see and trust for what I cannot yet see. Amen."
+      },
+      "6": {
+        "title": "Ask for counsel",
+        "summary": "You do not have to decide alone; seek someone who helps you see.",
+        "message": "A trustworthy person can offer another perspective without making the decision for you. Reach out and let yourself be supported.",
+        "reflection": "Who listens well and respects your freedom? Consider what you would like to ask them.",
+        "action": "Message someone you trust and ask for a conversation.",
+        "tip": "Good counsel widens your view, but the decision remains yours.",
+        "prayer": "God, surround me with wise people and help me listen without losing my own voice. Amen."
+      },
+      "7": {
+        "title": "Walk with confidence",
+        "summary": "Move forward knowing you are not alone on the path.",
+        "message": "Direction is a journey, not a single perfect choice. Keep walking, adjust when needed, and trust that God is with you.",
+        "reflection": "What have you learned about your direction this week? Let that understanding guide your next step.",
+        "action": "Write one sentence that sums up the direction you want to follow now.",
+        "tip": "Direction is a journey: adjust your route without losing hope.",
+        "prayer": "Lord, walk with me as I move forward. Give me confidence, humility, and hope for the road ahead. Amen."
+      }
+    }
+  },
+  "verses": {
+    "0": {
+      "text": "For I know the plans I have for you, says the Lord: plans for your well-being, not for harm…",
+      "reference": "Jeremiah 29:11"
+    },
+    "1": {
+      "text": "Do not fear, for I am with you; do not be dismayed, for I am your God.",
+      "reference": "Isaiah 41:10"
+    },
+    "2": {
+      "text": "The Lord is near to the brokenhearted and saves those who are crushed in spirit.",
+      "reference": "Psalm 34:18"
+    },
+    "3": {
+      "text": "Come to me, all who are weary and burdened, and I will give you rest.",
+      "reference": "Matthew 11:28"
+    },
+    "4": {
+      "text": "God is our refuge and strength, always present to help in trouble.",
+      "reference": "Psalm 46:1"
+    },
+    "5": { "text": "The Lord is my shepherd; I lack nothing.", "reference": "Psalm 23:1" },
+    "6": {
+      "text": "Trust in the Lord with all your heart and do not rely on your own understanding.",
+      "reference": "Proverbs 3:5"
+    },
+    "7": {
+      "text": "Be strong and courageous. Do not be afraid or discouraged, for the Lord your God is with you wherever you go.",
+      "reference": "Joshua 1:9"
+    },
+    "8": {
+      "text": "My help comes from the Lord, who made heaven and earth.",
+      "reference": "Psalm 121:2"
+    },
+    "9": {
+      "text": "Give him all your worries, because he cares for you.",
+      "reference": "1 Peter 5:7"
+    },
+    "10": {
+      "text": "May the God of hope fill you with joy and peace as you trust him, so that you overflow with hope through the Holy Spirit.",
+      "reference": "Romans 15:13"
+    },
+    "11": {
+      "text": "Because of the Lord's great love we are not consumed; his mercies never end.",
+      "reference": "Lamentations 3:22"
+    },
+    "12": {
+      "text": "Give your burdens to the Lord and he will sustain you; he will not let the righteous fall.",
+      "reference": "Psalm 55:22"
+    },
+    "13": {
+      "text": "Those who wait for the Lord will renew their strength. They will soar like eagles, run without growing weary, and walk without fainting.",
+      "reference": "Isaiah 40:31"
+    }
+  },
+  "conversation": {
+    "duration": {
+      "oneMinute": "{{minutes}} minute",
+      "minutes": "{{minutes}} minutes",
+      "minutesAndSeconds": "{{minutes}} min {{seconds}} sec"
+    },
+    "names": {
+      "discouragementPlan": "When discouragement weighs on you",
+      "directionPlan": "Finding direction again"
+    },
+    "replies": {
+      "crisis": "I am sorry you are going through this, and I am glad you told me. You are not alone, and your life matters. Please contact someone who can listen now. If you are in Brazil, call CVV at 188, free and available 24 hours a day. If you are in immediate danger, call local emergency services or SAMU at 192 in Brazil. If you can, ask someone you trust to stay with you.",
+      "talk": "I am here to listen, at your pace. Tell me what has been weighing on you or bringing you joy today.",
+      "directionWithPlan": "How about continuing where you left off? You are on Day {{nextDay}} of “{{planTitle}}”. Return to the Plans tab, one step at a time.",
+      "directionWithoutPlan": "When direction feels unclear, choose one plan and take its first step. Try “{{planTitle}}” in the Plans tab.",
+      "practiceWithCheckIn": "For today, I picked “{{practiceTitle}}”, a {{practiceDuration}} practice. Find it in your daily key card on the Home tab.",
+      "practiceWithoutCheckIn": "A practice works best when it fits your day. Check in on the Home tab and I will show you your daily practice.",
+      "prayer": "“{{verseText}}” ({{verseReference}}, free rendering). Would you like to sit quietly with these words for a minute? Breathe slowly.",
+      "breathingIntro": "When anxiety appears, your body may need a pause.",
+      "discouragement": "Tiredness and discouragement deserve care, too. The “{{planTitle}}” plan in the Plans tab offers small steps for harder days.",
+      "faith": "I am glad you want to explore this. Here is a verse for this moment: “{{verseText}}” ({{verseReference}}, free rendering). Sit with it for a moment."
+    },
+    "defaults": [
+      "Thank you for sharing that with me. Would you like to tell me more about your day?",
+      "I hear you. What you feel matters, and you do not have to find the words right away.",
+      "I am here with you. If you like, tell me what came to mind first.",
+      "Thank you for trusting me. What feels heaviest for you right now?",
+      "It makes sense to feel that way. Take a breath and continue when you are ready; I am listening."
+    ]
+  }
+}

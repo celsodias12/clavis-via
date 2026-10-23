@@ -1,0 +1,320 @@
+{
+  "common": {
+    "loading": "Carregando",
+    "tryAgain": "Tentar de novo",
+    "comingSoon": "Em breve",
+    "back": "Voltar",
+    "close": "Fechar",
+    "loadError": "Não foi possível carregar agora.",
+    "more": "Mais opções",
+    "search": "Buscar",
+    "notifications": "Notificações",
+    "settings": "Configurações",
+    "navigation": "Navegação"
+  },
+  "welcome": {
+    "brand": "CLAVIS VIA",
+    "taglineFirst": "Seu caminho",
+    "taglineSecond": "de volta para si,",
+    "taglineThird": "todos os dias.",
+    "start": "Começar minha jornada",
+    "haveAccount": "Já tenho uma conta"
+  },
+  "screen": {
+    "authentication": {
+      "emailLabel": "Email",
+      "emailPlaceholder": "voce@email.com",
+      "passwordLabel": "Senha",
+      "errors": {
+        "firstNameRequired": "Digite seu nome.",
+        "firstNameTooLong": "O nome pode ter no máximo 64 caracteres.",
+        "emailInvalid": "Digite um email válido.",
+        "passwordTooShort": "A senha precisa ter pelo menos 8 caracteres.",
+        "passwordTooLong": "A senha pode ter no máximo 72 caracteres.",
+        "passwordRequired": "Digite sua senha.",
+        "passwordCompromised": "Essa senha apareceu em vazamentos de dados. Escolha outra.",
+        "emailInUse": "Este email já está em uso.",
+        "invalidCredentials": "Email ou senha incorretos.",
+        "tooManyRequests": "Muitas tentativas. Tente de novo em alguns minutos.",
+        "generic": "Algo deu errado. Tente de novo."
+      }
+    },
+    "signUp": {
+      "title": "Crie sua conta",
+      "subtitle": "Seu caminho começa aqui.",
+      "firstNameLabel": "Nome",
+      "firstNamePlaceholder": "Como podemos te chamar?",
+      "passwordPlaceholder": "Mínimo de 8 caracteres",
+      "submit": "Criar conta",
+      "footerQuestion": "Já tem uma conta?",
+      "footerAction": "Entrar"
+    },
+    "signIn": {
+      "title": "Entrar na\nsua conta",
+      "subtitle": "Use o email e a senha que\nvocê cadastrou.",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Entrar",
+      "footerQuestion": "Ainda não tem conta?",
+      "footerAction": "Criar conta"
+    },
+    "checkIn": {
+      "title": "Como você está\nchegando hoje?",
+      "subtitle": "Escolha o que mais representa\nseu momento agora.",
+      "continue": "Continuar",
+      "otherLabel": "Conte em poucas palavras",
+      "saveError": "Não foi possível salvar agora.",
+      "groupLabel": "Como você está chegando hoje?",
+      "states": {
+        "heavy": "Pesada",
+        "anxious": "Ansiosa",
+        "discouraged": "Desanimada",
+        "irritated": "Irritada",
+        "sensitive": "Sensível",
+        "atPeace": "Em paz",
+        "hopeful": "Esperançosa",
+        "other": "Outro"
+      },
+      "errors": {
+        "otherTextRequired": "Conte em poucas palavras.",
+        "stateRequired": "Escolha como você está."
+      }
+    },
+    "home": {
+      "greeting": {
+        "morning": "Bom dia, {{name}}",
+        "afternoon": "Boa tarde, {{name}}",
+        "evening": "Boa noite, {{name}}",
+        "morningAnonymous": "Bom dia",
+        "afternoonAnonymous": "Boa tarde",
+        "eveningAnonymous": "Boa noite"
+      },
+      "subtitle": "Que bom ter você aqui hoje.",
+      "keyLabel": "SUA CHAVE DE HOJE",
+      "practiceButton": "Ver prática de hoje",
+      "inviteTitle": "Como você está hoje?",
+      "inviteText": "Faça seu check-in para receber a chave do dia.",
+      "inviteButton": "Fazer check-in",
+      "notifications": "Notificações",
+      "profile": "Perfil",
+      "verseTitle": "Um minuto com Deus",
+      "verseQuote": "“{{text}}”",
+      "verseReference": "{{reference}} ({{translation}})",
+      "verseTranslation": "NVI",
+      "versePlay": "Ouvir o versículo",
+      "journeyTitle": "Continue sua jornada",
+      "journeyDay": "Dia {{number}} de {{total}}",
+      "journeyEmpty": "Escolha um plano para começar.",
+      "journeyProgress": "Progresso do plano"
+    },
+    "plans": {
+      "title": "Planos",
+      "search": "Buscar",
+      "filters": {
+        "all": "Todos",
+        "emotions": "Emoções",
+        "relationships": "Relacionamentos",
+        "faith": "Fé"
+      },
+      "duration_one": "{{count}} dia",
+      "duration_other": "{{count}} dias",
+      "empty": "Nenhum plano nesta categoria por enquanto.",
+      "showAll": "Ver todos os planos",
+      "note": "Conteúdo fictício, criado para demonstração."
+    },
+    "plan": {
+      "dailyTime": "5 a 10 min por dia",
+      "dayLabel": "Dia {{number}}",
+      "dayCompleted": "Dia concluído",
+      "more": "Mais opções",
+      "start": "Começar plano",
+      "continue": "Continuar plano",
+      "completed": "Plano concluído",
+      "startError": "Não foi possível começar o plano agora.",
+      "reflectionsEmpty": "Quando você concluir um dia e contar como foi, sua reflexão aparece aqui.",
+      "tabs": {
+        "overview": "Visão geral",
+        "content": "Conteúdo",
+        "reflections": "Reflexões"
+      }
+    },
+    "journey": {
+      "title": "Minha jornada",
+      "segments": {
+        "overview": "Visão geral",
+        "emotions": "Minhas emoções",
+        "achievements": "Minhas conquistas"
+      },
+      "streakLabel_zero": "dias consecutivos",
+      "streakLabel_one": "dia consecutivo",
+      "streakLabel_other": "dias consecutivos",
+      "calendar": "Abrir calendário",
+      "dayWithCheckIn": "{{day}}: check-in feito",
+      "dayWithoutCheckIn": "{{day}}: sem check-in",
+      "phrase": "“Você não precisa ser perfeita para estar em progresso.”",
+      "achievementsTitle": "Minhas conquistas",
+      "viewAll": "Ver todas",
+      "achievements": {
+        "weeklyCheckIns_one": "Fiz {{count}} check-in esta semana",
+        "weeklyCheckIns_other": "Fiz {{count}} check-ins esta semana",
+        "planProgress": "{{plan}}: {{completed}} de {{total}} dias",
+        "completedPlans_one": "Concluí {{count}} plano",
+        "completedPlans_other": "Concluí {{count}} planos",
+        "completedPractices_one": "Fiz {{count}} prática",
+        "completedPractices_other": "Fiz {{count}} práticas",
+        "completedActions_one": "Concluí {{count}} ação do dia",
+        "completedActions_other": "Concluí {{count}} ações do dia"
+      },
+      "empty": "Suas conquistas aparecem aqui conforme você usa o app."
+    },
+    "conversation": {
+      "title": "Conversa",
+      "history": "Histórico",
+      "greeting": "Oi, {{name}}. Eu estou aqui com você. Como você está se sentindo hoje?",
+      "greetingAnonymous": "Oi. Eu estou aqui com você. Como você está se sentindo hoje?",
+      "assistantIcon": "Assistente CLAVIS",
+      "quickReplies": {
+        "talk": "Quero conversar",
+        "direction": "Preciso de uma direção",
+        "practice": "Quero fazer uma prática",
+        "prayer": "Quero um momento com Deus"
+      },
+      "typing": "digitando…",
+      "inputLabel": "Mensagem",
+      "inputPlaceholder": "Escreva aqui o que você está sentindo...",
+      "send": "Enviar",
+      "simulatedNotice": "Respostas simuladas nesta versão de demonstração.",
+      "disclaimer": "Respostas baseadas no universo CLAVIS.\nEste não é um serviço de tratamento médico ou psicológico.",
+      "sendError": "Não foi possível enviar agora.",
+      "dailyLimit": "Você chegou ao limite de mensagens por agora. Tente de novo mais tarde."
+    },
+    "planDay": {
+      "headerTitle": "Dia {{number}} de {{total}}",
+      "segments": {
+        "content": "Conteúdo",
+        "reflection": "Reflexão",
+        "action": "Ação",
+        "prayer": "Oração"
+      },
+      "todayMessage": "Mensagem de hoje",
+      "goToAction": "Ir para a ação do dia",
+      "previous": "Anterior",
+      "next": "Próximo",
+      "clock": "{{clock}} min",
+      "playVideo": "Reproduzir vídeo"
+    },
+    "dayAction": {
+      "headerTitle": "Ação do dia",
+      "tipTitle": "Dica da Thalita",
+      "tipQuote": "“{{tip}}”",
+      "complete": "Marcar como concluída",
+      "completed": "Dia concluído",
+      "completedToast": "Dia concluído.",
+      "reflectionLabel": "Como foi para você?",
+      "reflectionPlaceholder": "Escreva aqui sua reflexão...",
+      "saveError": "Não foi possível salvar agora.",
+      "errors": {
+        "reflectionTooLong": "Escreva no máximo 1000 caracteres."
+      }
+    },
+    "practice": {
+      "headerTitle": "Prática de hoje",
+      "duration": {
+        "minutes_one": "{{count}} minuto",
+        "minutes_other": "{{count}} minutos",
+        "mixed": "{{minutes}} min {{seconds}} s"
+      },
+      "play": "Reproduzir",
+      "pause": "Pausar",
+      "again": "Praticar de novo",
+      "done": "Prática registrada. Volte quando quiser.",
+      "saveError": "Não foi possível registrar a prática agora.",
+      "progress": "Progresso da prática"
+    },
+    "profile": {
+      "title": "Meu perfil",
+      "subtitle": "Em jornada de reconstrução",
+      "changePhoto": "Alterar foto",
+      "purposeTitle": "Meu propósito",
+      "purposeText": "Viver uma vida alinhada com quem eu sou, com leveza, fé e direção.",
+      "menu": {
+        "subscription": "Minha assinatura",
+        "settings": "Configurações",
+        "notifications": "Notificações",
+        "privacy": "Privacidade",
+        "help": "Central de ajuda",
+        "signOut": "Sair"
+      }
+    },
+    "emotions": {
+      "title": "Minhas emoções",
+      "periods": {
+        "week": "Semana",
+        "month": "Mês",
+        "year": "Ano"
+      },
+      "weekdays": {
+        "monday": "Seg",
+        "tuesday": "Ter",
+        "wednesday": "Qua",
+        "thursday": "Qui",
+        "friday": "Sex",
+        "saturday": "Sáb",
+        "sunday": "Dom"
+      },
+      "monthInitials": {
+        "january": "J",
+        "february": "F",
+        "march": "M",
+        "april": "A",
+        "may": "M",
+        "june": "J",
+        "july": "J",
+        "august": "A",
+        "september": "S",
+        "october": "O",
+        "november": "N",
+        "december": "D"
+      },
+      "dayLabel": "{{day}}: {{state}}",
+      "dayWithoutCheckIn": "{{day}}: sem check-in",
+      "chartLabel": "Gráfico das suas emoções",
+      "insightsTitle": "Principais percepções",
+      "insights": {
+        "balancedDays": {
+          "title": "Mais dias em equilíbrio",
+          "text": {
+            "week": "Você registrou mais dias em paz esta semana.",
+            "month": "Você registrou mais dias em paz este mês.",
+            "year": "Você registrou mais dias em paz este ano."
+          }
+        },
+        "lessAnxiety": {
+          "title": "Menos ansiedade",
+          "text": {
+            "week": "Sua ansiedade diminuiu {{percent}}% em relação à semana passada.",
+            "month": "Sua ansiedade diminuiu {{percent}}% em relação ao mês passado.",
+            "year": "Sua ansiedade diminuiu {{percent}}% em relação ao ano passado."
+          }
+        },
+        "routineHelps": {
+          "title": "Rotina te ajuda",
+          "text": "Nos dias em que você fez a prática, seu humor esteve melhor."
+        }
+      },
+      "empty": "Você ainda não fez check-in neste período.",
+      "emptyAction": "Fazer check-in",
+      "noInsights": "As percepções aparecem conforme você registra seus dias."
+    },
+    "notFound": {
+      "title": "Página não encontrada",
+      "message": "Esse caminho não existe.",
+      "action": "Ir para o início"
+    }
+  },
+  "tabs": {
+    "home": "Início",
+    "plans": "Planos",
+    "conversation": "Conversa",
+    "journey": "Jornada"
+  }
+}

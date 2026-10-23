@@ -1,0 +1,64 @@
+appId: com.celsodias.clavisvia
+---
+# 1. Sign in
+- runFlow: subflows/launch-fresh.yaml
+- runFlow: subflows/sign-in.yaml
+# 2. Check-in "Ansiosa"
+- extendedWaitUntil:
+    visible:
+      id: check-in-option-anxious
+    timeout: 30000
+- tapOn:
+    id: check-in-option-anxious
+- tapOn:
+    id: check-in-submit
+# 3. Home shows the daily key of the emotion (database content)
+- extendedWaitUntil:
+    visible: Voz e Limites
+    timeout: 30000
+# 4. Open the plan and complete Day 1
+- tapOn:
+    id: tab-bar-item-plans
+- tapOn:
+    id: plans-item-when-discouragement-weighs
+- tapOn:
+    id: plan-primary-button
+- tapOn:
+    id: day-segment-action
+- tapOn:
+    id: day-action-button
+- tapOn:
+    id: action-reflection
+- inputText: Reflexao do teste
+- hideKeyboard
+- tapOn:
+    id: action-complete-button
+- extendedWaitUntil:
+    visible:
+      id: plan-day-row-1-completed
+    timeout: 30000
+# 5. Journey and Emotions reflect the check-in and the completion
+- back
+- tapOn:
+    id: tab-bar-item-journey
+- assertVisible:
+    id: journey-achievement-weekly-check-ins
+- assertVisible:
+    id: journey-achievement-plan-progress
+- tapOn:
+    id: journey-segment-emotions
+# The column label is interface copy (it follows the device language), so match the pt-BR and en/es words.
+- assertVisible:
+    id: emotions-day-.*
+    text: .*(Ansiosa|Anxious).*
+# 6. Close and reopen: the data is kept
+- stopApp
+- launchApp
+- runFlow: subflows/open-dev-build.yaml
+- extendedWaitUntil:
+    visible: Voz e Limites
+    timeout: 90000
+- tapOn:
+    id: tab-bar-item-journey
+- assertVisible:
+    id: journey-achievement-plan-progress

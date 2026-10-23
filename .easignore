@@ -1,0 +1,63 @@
+# EAS reads this file from the git root (the archive root in a monorepo) and,
+# when it exists, stops reading every .gitignore. So it must repeat the ignore
+# rules of /.gitignore, /api/.gitignore and /mobile/.gitignore, then add what
+# the release build does not need.
+
+# --- mirror of /.gitignore ---
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Real env files never go in the archive: the build reads its variables from
+# the EAS server (eas env:push), and a local .env.local would override them.
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
+
+.DS_Store
+example
+.superpowers/
+docs/superpowers/
+.firecrawl/
+
+# --- mirror of /mobile/.gitignore ---
+# Generated native folders: EAS must run prebuild itself.
+/mobile/.expo/
+/mobile/web-build/
+/mobile/expo-env.d.ts
+/mobile/ios
+/mobile/android
+/mobile/.kotlin/
+/mobile/*.orig.*
+/mobile/*.jks
+/mobile/*.p8
+/mobile/*.p12
+/mobile/*.key
+/mobile/*.mobileprovision
+/mobile/*.pem
+/mobile/.metro-health-check*
+
+# --- mirror of /api/.gitignore ---
+/api/.wrangler
+/api/.yarn/
+.idea/
+
+# --- not needed by the release build ---
+.github/
+.claude/
+.vscode/
+docs/
+**/tests/
+# The API is a types-only workspace dependency of the app: keep api/package.json
+# (pnpm install --frozen-lockfile needs every workspace manifest) and drop the rest.
+/api/*
+!/api/package.json
+# Same for infra (E2E and demo-account scripts): keep only its manifest.
+/infra/*
+!/infra/package.json
+# The web app is not part of the mobile build: keep only its manifest (the workspace lockfile
+# check needs every manifest). packages/shared stays, the app imports it.
+/web/*
+!/web/package.json
